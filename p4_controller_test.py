@@ -176,7 +176,8 @@ def packet_route():
     # switch to calculate by flow_trans!!!
     #flow = flow_trans.schedule_flows(flow_data)
     #print("Get flow:", flow)
-    flow = {'status': 'success', 'items': [{'src_mac': 'a0:36:9f:a9:5b:6f', 'dst_mac': '08:00:27:87:aa:b8', 'path': ['1',  '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
+    # flow = {'status': 'success', 'items': [{'src_mac': 'a0:36:9f:a9:5b:6f', 'dst_mac': '08:00:27:87:aa:b8', 'path': ['1',  '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
+    flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:1a:0a:93', 'dst_mac': '00:f1:f3:1a:cc:c1', 'path': ['1',  '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
     #flow = {'status': 'success', 'items': [{'src_mac': 'f0:2f:74:ad:b1:d1', 'dst_mac': 'f0:2f:74:ad:b1:30', 'path': ['1', '4', '5', '6', '7', '8', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
 
     '''
