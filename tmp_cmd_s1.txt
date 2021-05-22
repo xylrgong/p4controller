@@ -1,0 +1,2 @@
+pipeline PIPELINE0 table ipv4_lpm_0 update ./examples/tmp_flow_table_ipv4_s1.txt none none
+pipeline PIPELINE0 table arp_exact_0 update ./examples/tmp_flow_table_arp_s1.txt none none
