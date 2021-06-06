@@ -1,2 +1,7 @@
-match 0x08002787aab8 order 234 port H(0)
-match 0xa0369fa95b6f order 234 port H(1)
+1622965182.4650786
+match 0x08002787aab8 order 324 port 0
+match 0xa0369fa95b6f order 324 port 1
+match 0xnn1122334455 order 324 port 3
+match 0xmmbbccddeeff order 324 port 2
+match 0x001122334455 order 324 port 3
+match 0xaabbccddeeff order 324 port 2
