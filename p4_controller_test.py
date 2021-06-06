@@ -16,8 +16,8 @@ import paramiko
 
 class Reverse(Enum):
     t_234 = '0'
-    t_342 = '1'
-    t_324 = '2'
+    t_324 = '1'
+    t_342 = '2'
 
 
 pkt_reverse_t = Reverse.t_234.value  # default strategy is set to normal
@@ -43,6 +43,16 @@ route_port_table = [['x', '1', '2', '3', 'x', 'x', 'x', 'x'], # 1
                     ['x', 'x', '1', 'x', 'x', 'x', '0', 'x'], # 8
                     ]
 
+#route_port_table = [['x', '1', '2', '3', 'x', 'x', 'x', 'x'], # 1
+#                    ['0', 'x', '1', 'x', 'x', 'x', 'x', 'x'], # 2
+#                    ['2', '1', 'x', 'x', 'x', 'x', 'x', '3'], # 3
+#                    ['0', 'x', 'x', 'x', '1', 'x', '2', 'x'], # 4
+#                    ['x', 'x', 'x', '0', 'x', '1', 'x', 'x'], # 5
+#                    ['x', 'x', 'x', 'x', '1', 'x', '0', 'x'], # 6
+#                    ['x', 'x', 'x', '0', 'x', '1', 'x', '2'], # 7
+#                    ['x', 'x', '1', 'x', 'x', 'x', '0', 'x'], # 8
+#                    ]
+
 dpdk_work_dir = {'1' : '/home/p4security1/dpdk-21.02/examples/pipeline/examples/',
                  '2' : '/home/p4s2/dpdk-21.02/examples/pipeline/examples/',
                  '3' : '/home/p4s3/dpdk-21.02/examples/pipeline/examples/',
@@ -65,7 +75,7 @@ dpdk_username = {'1': 'p4security1',
                  '8': 'pc-1',
                  }
 
-dpdk_switch = ['1', '2', '3', '4', '5', '6', '7', '8']
+dpdk_switch = ['1', '2', '3']
 # real_switch = ['1', '2', '3']
 # virtual_switch = ['4', '5', '6', '7', '8']
 
@@ -94,10 +104,10 @@ def telnetClient(ip, port, filename):  # send reverse command to dpdk switches /
         return 'connection fail'
     # show = tn.read_very_eager().decode()  # show pipeline result
     print('Connected to switch@', ip)
-    time.sleep(1)
+    time.sleep(0.2)
     f = open(filename)
     commands = f.read()
-    time.sleep(1)
+    time.sleep(0.2)
     tn.write(commands.encode())  # encode to transfer str to byte-like
     result = tn.read_very_eager().decode()  # get pipeline result
     print(result)
@@ -155,6 +165,7 @@ def packet_reverse():  #
             print("Change strategy to " + pkt_reverse_t_n)
         else:
             print("Change strategy failed! " + res)
+            return 'Strategy change failed'
     pkt_reverse_t = pkt_reverse_t_n
     return 'OK'
 
@@ -167,6 +178,8 @@ def packet_route():
     edge_switch_max = len(route_port_table)  # edge switch connected with host at port 0
 
     pkt_route = request.form # get route from controller. get src/dst mac and ip
+    print("get raw data")
+    print(pkt_route)
     src_mac = pkt_route['src_mac']
     dst_mac = pkt_route['dst_mac']
     bw = float(pkt_route['bw'])
@@ -174,10 +187,10 @@ def packet_route():
     flow_data = {"src": src_mac, "dst": dst_mac, "bandwidth": bw, "delay": delay}
     # print("Get flow data:", flow_data)
     # switch to calculate by flow_trans!!!
-    #flow = flow_trans.schedule_flows(flow_data)
-    #print("Get flow:", flow)
+    flow = flow_trans.schedule_flows(flow_data)
+    print("Get flow:", flow)
     # flow = {'status': 'success', 'items': [{'src_mac': 'a0:36:9f:a9:5b:6f', 'dst_mac': '08:00:27:87:aa:b8', 'path': ['1',  '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
-    flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:1a:0a:93', 'dst_mac': '00:f1:f3:1a:cc:c1', 'path': ['1',  '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
+    # flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:1a:0a:93', 'dst_mac': '00:f1:f3:1a:cc:c1', 'path': ['1', '4', '5', '6', '7', '8', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
     #flow = {'status': 'success', 'items': [{'src_mac': 'f0:2f:74:ad:b1:d1', 'dst_mac': 'f0:2f:74:ad:b1:30', 'path': ['1', '4', '5', '6', '7', '8', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
 
     '''
@@ -218,7 +231,7 @@ def packet_route():
             print('/*********** DPDK switch **********/')
             print('switch:', switch)
             ipv4_table_filename = 'tmp_flow_table_ipv4_s' + switch + '.txt'
-            f1 = open(ipv4_table_filename, 'w')
+            f1 = open(ipv4_table_filename, 'a')
             f1.write('match ' + dst_mac_write_dpdk + ' ' + 'action ipv4_forward port H(' + port_m2n + ')\n')
             f1.write('match ' + src_mac_write_dpdk + ' ' + 'action ipv4_forward port H(' + port_n2m + ')\n')
             f1.close()
@@ -227,7 +240,7 @@ def packet_route():
             print("flow_table ipv4 for switch" + switch + ": " + 'match ' + src_mac_write_dpdk + ' ' + 'action ipv4_forward port H(' + port_n2m + ')')
 
             arp_table_filename = 'tmp_flow_table_arp_s' + switch + '.txt'
-            f2 = open(arp_table_filename, 'w')
+            f2 = open(arp_table_filename, 'a')
             f2.write('match ' + dst_mac_write_dpdk + ' ' + 'action arp_forward port H(' + port_m2n + ')\n')
             f2.write('match ' + src_mac_write_dpdk + ' ' + 'action arp_forward port H(' + port_n2m + ')\n')
             f2.write('match ' + '0xffffffffffff' + ' ' + 'action arp_forward port H(' + port_n2m + ')\n')
@@ -254,4 +267,4 @@ def packet_route():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=2021)
+    app.run(host='0.0.0.0', port=2021, debug=True)

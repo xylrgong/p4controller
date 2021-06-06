@@ -1,4 +1,0 @@
-thread 1 pipeline PIPELINE1 enable
-thread 1 pipeline PIPELINE2 disable
-pipeline PIPELINE1 table ipv4_lpm_0 update ./examples/tmp_flow_table_ipv4_s8.txt none none
-pipeline PIPELINE1 table arp_exact_0 update ./examples/tmp_flow_table_arp_s8.txt none none

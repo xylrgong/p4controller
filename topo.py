@@ -1,6 +1,8 @@
 import networkx as nx
 from setting import in_port1
 from setting import in_port2
+from setting import egress_sw1
+from setting import egress_sw2
 
 
 def get_all_paths():
@@ -69,3 +71,8 @@ def generate_ports(path, ports):
         ports_list.append(ports_pair[1])
     ports_list.append(in_port2)
     return ports_list
+
+
+def get_all_egress_paths():
+    paths, _ = get_all_paths()
+    return paths[(egress_sw1, egress_sw2)]

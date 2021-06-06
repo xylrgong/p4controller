@@ -32,3 +32,14 @@ def link_in_path(link, path):
         if operator.eq(cur_link, link) or operator.eq(cur_reverse_link, link):
             return True
     return False
+
+
+def print_log_info(data):
+    # log info
+    print(data['status'])
+    if data['status'] == 'success':
+        for item in data['items']:
+            print(item)
+        # print(data['order'])
+        # print(data['handle_by_controller'])
+        print('*' * 140 + '\n')

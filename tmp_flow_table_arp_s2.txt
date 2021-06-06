@@ -1,4 +1,0 @@
-match 0x08002787aab8 action arp_forward port H(1)
-match 0xa0369fa95b6f action arp_forward port H(0)
-match 0xffffffffffff action arp_forward port H(0)
-match 0xffffffffffff action arp_forward port H(1)

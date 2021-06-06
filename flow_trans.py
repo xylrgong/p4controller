@@ -11,10 +11,11 @@ from coef import generate_bounds
 from coef import get_all_path_num
 from coef import get_all_links
 from coef import get_flow_path_num
-from topo import get_all_paths, generate_ports
+from topo import get_all_paths, generate_ports, get_all_egress_paths
 from setting import max_bandwidth
 from util import *
 from consistent_update.update_order import get_submit_order
+from alternative_path.alter_strategy import alter_path
 
 flow_table = []
 new_flow = {}
@@ -27,21 +28,55 @@ def schedule_flows(flow_data):
     global flow_table
     global last_paths
     new_flow = flow_data
-    flow_table.append(flow_data)
-    data = allocate_paths_and_bandwidth()
-    if data['status'] == 'failed':
-        flow_table = flow_table[:-1]
-        last_paths = last_paths[:-1]
-    # log info
-    print(data['status'])
-    if data['status'] == 'success':
-        for item in data['items']:
-            print(item)
-        print(data['order'])
-        print(data['handle_by_controller'])
-        print('*' * 140 + '\n')
 
+    if is_override_flow(flow_data):
+        override_table_with_new_flow(flow_data)
+    else:
+        flow_table.append(flow_data)
+
+    data = allocate_paths_and_bandwidth()
+
+    if data['status'] == 'failed':
+        print("alter:")
+        paths = get_all_egress_paths()
+        data = alter_path(flow_table, paths)
+        if data['status'] == 'failed':
+            flow_table = flow_table[:-1]
+            # last_paths = last_paths[:-1]
+        else:
+            # 成功优化记录路径分配
+            record_paths(data)
+    else:
+        pass
+
+    print_log_info(data)
     return data
+
+
+def is_override_flow(flow_data):
+    for flow in flow_table:
+        if flow_data['src'] == flow['src'] and flow_data['dst'] == flow['dst']:
+            return True
+    return False
+
+
+def override_table_with_new_flow(flow_data):
+    override_index = -1
+    for index, flow in enumerate(flow_table):
+        if flow_data['src'] == flow['src'] and flow_data['dst'] == flow['dst']:
+            override_index = index
+
+    flow_table.pop(override_index)
+    flow_table.append(flow_data)
+
+
+def record_paths(data):
+    global last_paths
+    new_paths = []
+    for item in data['items']:
+        new_paths.append(item['path'])
+
+    last_paths = new_paths
 
 
 def allocate_paths_and_bandwidth():
@@ -88,16 +123,24 @@ def resource_utilization_optimize(all_paths, all_volumes, all_delay, all_bandwid
             select_path = path[path_indexs[flow_count]]
             item['path'] = select_path
             new_paths.append(select_path)
-            item['ports'] = generate_ports(select_path, ports)
+            # 可选配置端口
+            # item['ports'] = generate_ports(select_path, ports)
             flow_count += 1
             data['items'].append(item)
         global last_paths
-        flow_order, flow_handled = get_submit_order(all_bandwidth, max_bandwidth,
-                                                    last_paths, new_paths)
-        flow_order.insert(0, flow_num - 1)
+        try:
+            flow_order, flow_handled = get_submit_order(all_bandwidth, max_bandwidth,
+                                                last_paths, new_paths)
+            if len(last_paths) != len(new_paths):
+                flow_order.insert(0, flow_num - 1)
+            data['order'] = flow_order
+            data['handle_by_controller'] = flow_handled
+        except Exception:
+            data['order'] = []
+            data['handle_by_controller'] = []
+
         last_paths = new_paths
-        data['order'] = flow_order
-        data['handle_by_controller'] = flow_handled
+
     return data
 
 
