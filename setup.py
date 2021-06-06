@@ -65,6 +65,6 @@ dpdk_username = {'1': 'p4security1',
                  '8': 'pc-1',
                  }
 
-dpdk_switch = ['1', '2', '3']
+dpdk_switch = ['1', '2', '3', '4', '5', '6', '7', '8']
 # real_switch = ['1', '2', '3']
 # virtual_switch = ['4', '5', '6', '7', '8']

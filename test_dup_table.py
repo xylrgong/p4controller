@@ -1,4 +1,5 @@
 import time
+import os
 from logger import *
 import p4_controller_test
 
@@ -33,35 +34,55 @@ if __name__ == '__main__':
         f1.write('match ' + src_mac_write_dpdk + ' ' + 'order 234 port 1\n')
         f1.close()
         log.logger.info('Route update success for switch:' + switch)'''
-    order = ' 324 '
-    f = open('mac_table.txt', 'r')
+    order = ' 432 '
+    table_dir = 'mac_table_local/'
+    table_name = 'mac_table_' + switch + '.txt'
+    if not os.path.exists(table_dir + table_name):
+        f = open(table_dir + table_name, 'w', encoding='utf-8')
+        f.close()
+    f = open(table_dir + table_name, 'r')
     mac_in_file = []
     t3 = str(time.time())
     print('t3:', t3)
     file_data = ''
-    test_src_mac = '0xaabbccddeeff'
-    test_dst_mac = '0x001122334455'
-    test_src_mac_port = '2'
-    test_dst_mac_port = '3'
+    test_src_mac = '0xffffffffffff'
+    test_dst_mac = '0xeeeeeeeeeeee'
+    test_src_mac_port = '3'
+    test_dst_mac_port = '5'
+    tmp_mac_port = {test_dst_mac: test_dst_mac_port, test_src_mac: test_src_mac_port}
     for line in f.readlines()[1:]:
         words = line.split()
         print(words)
         order_o = words[3]
         mac_o = words[1]
+        port_o = words[5]
         mac_in_file.append(mac_o)
         order_o = ' ' + order_o + ' '
         if order != order_o:
             line = line.replace(order_o, order)
+        if test_src_mac == mac_o:
+            line = line.replace(mac_o, test_src_mac).strip('\n')
+            line = line[:-1] + tmp_mac_port[test_src_mac] + '\n'
+        if test_dst_mac == mac_o:
+            line = line.replace(mac_o, test_dst_mac).strip('\n')
+            line = line[:-1] + tmp_mac_port[test_dst_mac] + '\n'
         file_data += line
-    print("file_data:", file_data)
-    print("words:", words)
+        print("file_data:", file_data)
+    f.close()
+    # print("words:", words)
     if test_dst_mac not in mac_in_file:
         add = 'match ' + test_dst_mac + ' ' + 'order' + order + 'port ' + test_dst_mac_port + '\n'
         file_data += add
     if test_src_mac not in mac_in_file:
         add = 'match ' + test_src_mac + ' ' + 'order' + order + 'port ' + test_src_mac_port + '\n'
         file_data += add
+    with open(table_dir + table_name, 'w', encoding='utf-8') as f:
+        f.write(t3)
+        f.write('\n')
+        f.write(file_data)
+        f.close()
     with open('mac_table.txt', 'w') as f:
         f.write(t3)
         f.write('\n')
         f.write(file_data)
+        f.close()

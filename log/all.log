@@ -1,0 +1,228 @@
+2021-06-06 20:08:55,169 - ERROR: Route update failed
+2021-06-06 20:10:36,067 - ERROR: Flow status is 'failed', route update failed
+2021-06-06 20:11:44,151 - INFO: flow table for switch:1 update successfully!
+2021-06-06 20:11:44,152 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:11:44,152 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
+2021-06-06 20:11:44,153 - INFO: flow table for switch:3 update successfully!
+2021-06-06 20:11:44,153 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
+2021-06-06 20:11:44,153 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:13:31,336 - INFO: flow table for switch:1 update successfully!
+2021-06-06 20:13:31,336 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:13:31,337 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
+2021-06-06 20:13:31,341 - INFO: flow table for switch:3 update successfully!
+2021-06-06 20:13:31,341 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
+2021-06-06 20:13:31,341 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:14:17,783 - INFO: flow table for switch:1 update successfully!
+2021-06-06 20:14:17,784 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:14:17,784 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
+2021-06-06 20:14:17,788 - INFO: flow table for switch:3 update successfully!
+2021-06-06 20:14:17,788 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
+2021-06-06 20:14:17,788 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:15:22,943 - INFO: flow table for switch:1 update successfully!
+2021-06-06 20:15:22,943 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:15:22,943 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
+2021-06-06 20:15:22,948 - INFO: flow table for switch:3 update successfully!
+2021-06-06 20:15:22,948 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
+2021-06-06 20:15:22,948 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:15:42,815 - INFO: flow table for switch:1 update successfully!
+2021-06-06 20:15:42,815 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:15:42,816 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
+2021-06-06 20:15:42,820 - INFO: flow table for switch:3 update successfully!
+2021-06-06 20:15:42,820 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
+2021-06-06 20:15:42,820 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:15:44,455 - INFO: flow table for switch:1 update successfully!
+2021-06-06 20:15:44,456 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:15:44,456 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
+2021-06-06 20:15:44,460 - INFO: flow table for switch:3 update successfully!
+2021-06-06 20:15:44,460 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
+2021-06-06 20:15:44,460 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:18:00,529 - INFO: Change strategy from 0 to 1 for switch 1
+2021-06-06 20:18:00,534 - INFO: Change strategy from 0 to 1 for switch 2
+2021-06-06 20:18:00,534 - INFO: Change strategy from 0 to 1 for switch 3
+2021-06-06 20:18:58,230 - INFO: flow table for switch:1 update successfully!
+2021-06-06 20:18:58,231 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:18:58,231 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
+2021-06-06 20:18:58,231 - INFO: flow table for switch:4 update successfully!
+2021-06-06 20:18:58,232 - INFO: switch 4flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:18:58,232 - INFO: switch 4flow table:match f02f74adb130 order 234 port 1
+2021-06-06 20:18:58,232 - INFO: flow table for switch:5 update successfully!
+2021-06-06 20:18:58,233 - INFO: switch 5flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:18:58,233 - INFO: switch 5flow table:match f02f74adb130 order 234 port 1
+2021-06-06 20:18:58,233 - INFO: flow table for switch:6 update successfully!
+2021-06-06 20:18:58,234 - INFO: switch 6flow table:match f02f74adb1d1 order 234 port 1
+2021-06-06 20:18:58,234 - INFO: switch 6flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:18:58,234 - INFO: flow table for switch:7 update successfully!
+2021-06-06 20:18:58,235 - INFO: switch 7flow table:match f02f74adb1d1 order 234 port 1
+2021-06-06 20:18:58,235 - INFO: switch 7flow table:match f02f74adb130 order 234 port 2
+2021-06-06 20:18:58,235 - INFO: flow table for switch:8 update successfully!
+2021-06-06 20:18:58,236 - INFO: switch 8flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:18:58,236 - INFO: switch 8flow table:match f02f74adb130 order 234 port 1
+2021-06-06 20:18:58,236 - INFO: flow table for switch:3 update successfully!
+2021-06-06 20:18:58,236 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
+2021-06-06 20:18:58,236 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:19:48,633 - INFO: flow table for switch:1 update successfully!
+2021-06-06 20:19:48,633 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:19:48,633 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
+2021-06-06 20:19:48,637 - INFO: flow table for switch:4 update successfully!
+2021-06-06 20:19:48,638 - INFO: switch 4flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:19:48,638 - INFO: switch 4flow table:match f02f74adb130 order 234 port 1
+2021-06-06 20:19:48,638 - INFO: flow table for switch:5 update successfully!
+2021-06-06 20:19:48,638 - INFO: switch 5flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:19:48,638 - INFO: switch 5flow table:match f02f74adb130 order 234 port 1
+2021-06-06 20:19:48,639 - INFO: flow table for switch:6 update successfully!
+2021-06-06 20:19:48,639 - INFO: switch 6flow table:match f02f74adb1d1 order 234 port 1
+2021-06-06 20:19:48,639 - INFO: switch 6flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:19:48,640 - INFO: flow table for switch:7 update successfully!
+2021-06-06 20:19:48,640 - INFO: switch 7flow table:match f02f74adb1d1 order 234 port 1
+2021-06-06 20:19:48,640 - INFO: switch 7flow table:match f02f74adb130 order 234 port 2
+2021-06-06 20:19:48,640 - INFO: flow table for switch:8 update successfully!
+2021-06-06 20:19:48,641 - INFO: switch 8flow table:match f02f74adb1d1 order 234 port 0
+2021-06-06 20:19:48,641 - INFO: switch 8flow table:match f02f74adb130 order 234 port 1
+2021-06-06 20:19:48,641 - INFO: flow table for switch:3 update successfully!
+2021-06-06 20:19:48,641 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
+2021-06-06 20:19:48,641 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
+2021-06-06 20:22:35,129 - INFO: Change strategy from 0 to 1 for switch 1
+2021-06-06 20:24:30,849 - INFO: Change strategy from 0 to 1 for switch 1
+2021-06-06 20:27:38,905 - INFO: Change strategy from 0 to 1 for switch 1
+2021-06-06 20:27:38,905 - ERROR: mac_table not found!
+2021-06-06 20:27:38,905 - INFO: Change strategy from 0 to 1 for switch 2
+2021-06-06 20:27:38,910 - INFO: Change strategy from 0 to 1 for switch 3
+2021-06-06 20:27:38,910 - INFO: Change strategy from 0 to 1 for switch 4
+2021-06-06 20:27:38,911 - INFO: Change strategy from 0 to 1 for switch 5
+2021-06-06 20:27:38,911 - INFO: Change strategy from 0 to 1 for switch 6
+2021-06-06 20:27:38,912 - INFO: Change strategy from 0 to 1 for switch 7
+2021-06-06 20:27:38,912 - INFO: Change strategy from 0 to 1 for switch 8
+2021-06-06 20:29:51,216 - WARNING: Strategy not change!
+2021-06-06 20:30:01,560 - WARNING: Strategy not change!
+2021-06-06 20:44:33,926 - INFO: Change strategy from 0 to 1 for switch 1
+2021-06-06 20:44:33,926 - WARNING: Now deploy new strategy!, but mac_table_2.txt not existing, now create file for switch
+2021-06-06 20:47:24,862 - INFO: Change strategy from 0 to 1 for switch 1
+2021-06-06 20:47:24,863 - WARNING: file:mac_table_2.txtis empty
+2021-06-06 20:47:24,867 - INFO: Change strategy from 0 to 1 for switch 3
+2021-06-06 20:47:24,867 - INFO: Change strategy from 0 to 1 for switch 4
+2021-06-06 20:47:24,868 - INFO: Change strategy from 0 to 1 for switch 5
+2021-06-06 20:47:24,868 - INFO: Change strategy from 0 to 1 for switch 6
+2021-06-06 20:47:24,869 - INFO: Change strategy from 0 to 1 for switch 7
+2021-06-06 20:47:24,869 - INFO: Change strategy from 0 to 1 for switch 8
+2021-06-06 20:48:03,268 - WARNING: Strategy not change!
+2021-06-06 20:48:14,578 - WARNING: Strategy not change!
+2021-06-06 20:48:15,908 - WARNING: Strategy not change!
+2021-06-06 20:48:28,709 - INFO: Change strategy from 1 to 2 for switch 1
+2021-06-06 20:48:28,710 - WARNING: file:mac_table_2.txtis empty
+2021-06-06 20:48:28,714 - INFO: Change strategy from 1 to 2 for switch 3
+2021-06-06 20:48:28,715 - INFO: Change strategy from 1 to 2 for switch 4
+2021-06-06 20:48:28,716 - INFO: Change strategy from 1 to 2 for switch 5
+2021-06-06 20:48:28,716 - INFO: Change strategy from 1 to 2 for switch 6
+2021-06-06 20:48:28,717 - INFO: Change strategy from 1 to 2 for switch 7
+2021-06-06 20:48:28,718 - INFO: Change strategy from 1 to 2 for switch 8
+2021-06-06 20:49:17,029 - WARNING: Strategy not change!
+2021-06-06 20:49:19,548 - INFO: Change strategy from 0 to 1 for switch 1
+2021-06-06 20:49:19,549 - WARNING: file:mac_table_2.txt is empty
+2021-06-06 20:49:19,553 - INFO: Change strategy from 0 to 1 for switch 3
+2021-06-06 20:49:19,554 - INFO: Change strategy from 0 to 1 for switch 4
+2021-06-06 20:49:19,555 - INFO: Change strategy from 0 to 1 for switch 5
+2021-06-06 20:49:19,556 - INFO: Change strategy from 0 to 1 for switch 6
+2021-06-06 20:49:19,556 - INFO: Change strategy from 0 to 1 for switch 7
+2021-06-06 20:49:19,556 - INFO: Change strategy from 0 to 1 for switch 8
+2021-06-06 20:49:34,900 - INFO: Change strategy from 1 to 2 for switch 1
+2021-06-06 20:49:34,901 - WARNING: file:mac_table_2.txt is empty
+2021-06-06 20:49:34,905 - INFO: Change strategy from 1 to 2 for switch 3
+2021-06-06 20:49:34,906 - INFO: Change strategy from 1 to 2 for switch 4
+2021-06-06 20:49:34,907 - INFO: Change strategy from 1 to 2 for switch 5
+2021-06-06 20:49:34,907 - INFO: Change strategy from 1 to 2 for switch 6
+2021-06-06 20:49:34,908 - INFO: Change strategy from 1 to 2 for switch 7
+2021-06-06 20:49:34,908 - INFO: Change strategy from 1 to 2 for switch 8
+2021-06-06 20:52:07,670 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-06 20:52:07,670 - WARNING: file:mac_table_2.txt is empty
+2021-06-06 20:52:07,674 - INFO: Change strategy from 234 to 324 for switch 3
+2021-06-06 20:52:07,675 - INFO: Change strategy from 234 to 324 for switch 4
+2021-06-06 20:52:07,676 - INFO: Change strategy from 234 to 324 for switch 5
+2021-06-06 20:52:07,676 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-06 20:52:07,677 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-06 20:52:07,677 - INFO: Change strategy from 234 to 324 for switch 8
+2021-06-06 21:11:30,516 - WARNING: Strategy not change!
+2021-06-06 21:12:12,180 - WARNING: Strategy not change!
+2021-06-06 21:12:14,001 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-06 21:12:14,001 - WARNING: Now deploy new strategy!, but mac_table_2.txt not existing, now create file for switch
+2021-06-06 21:12:14,006 - INFO: Change strategy from 234 to 324 for switch 3
+2021-06-06 21:12:14,007 - INFO: Change strategy from 234 to 324 for switch 4
+2021-06-06 21:12:14,007 - INFO: Change strategy from 234 to 324 for switch 5
+2021-06-06 21:12:14,008 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-06 21:12:14,008 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-06 21:12:14,009 - INFO: Change strategy from 234 to 324 for switch 8
+2021-06-06 21:12:50,402 - WARNING: Strategy not change!
+2021-06-06 21:12:52,099 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-06 21:12:52,100 - WARNING: Now deploy new strategy!, but mac_table_2.txt not existing, now create file for switch
+2021-06-06 21:12:52,104 - INFO: Change strategy from 234 to 324 for switch 3
+2021-06-06 21:12:52,105 - INFO: Change strategy from 234 to 324 for switch 4
+2021-06-06 21:12:52,105 - INFO: Change strategy from 234 to 324 for switch 5
+2021-06-06 21:12:52,106 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-06 21:12:52,107 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-06 21:12:52,107 - INFO: Change strategy from 234 to 324 for switch 8
+2021-06-06 21:13:39,044 - WARNING: Strategy not change!
+2021-06-06 21:13:40,523 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-06 21:13:40,523 - WARNING: Now deploy new strategy!, but mac_table_2.txt not exist
+2021-06-06 21:14:17,183 - WARNING: Strategy not change!
+2021-06-06 21:14:18,698 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-06 21:14:18,699 - WARNING: Now deploy new strategy!, but mac_table_2.txt not exist
+2021-06-06 21:14:18,703 - INFO: Change strategy from 234 to 324 for switch 3
+2021-06-06 21:14:18,704 - INFO: Change strategy from 234 to 324 for switch 4
+2021-06-06 21:14:18,705 - INFO: Change strategy from 234 to 324 for switch 5
+2021-06-06 21:14:18,706 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-06 21:14:18,707 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-06 21:14:18,707 - INFO: Change strategy from 234 to 324 for switch 8
+2021-06-06 21:15:00,444 - WARNING: Strategy not change!
+2021-06-06 21:15:01,714 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-06 21:15:01,715 - WARNING: Now deploy new strategy, but mac_table_2.txt not exist
+2021-06-06 21:15:01,715 - INFO: Change strategy from 234 to 324 for switch 3
+2021-06-06 21:15:01,716 - INFO: Change strategy from 234 to 324 for switch 4
+2021-06-06 21:15:01,717 - INFO: Change strategy from 234 to 324 for switch 5
+2021-06-06 21:15:01,717 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-06 21:15:01,718 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-06 21:15:01,718 - INFO: Change strategy from 234 to 324 for switch 8
+2021-06-06 21:15:04,600 - INFO: Change strategy from 324 to 234 for switch 1
+2021-06-06 21:15:04,601 - WARNING: Now deploy new strategy, but mac_table_2.txt not exist
+2021-06-06 21:15:04,601 - INFO: Change strategy from 324 to 234 for switch 3
+2021-06-06 21:15:04,602 - INFO: Change strategy from 324 to 234 for switch 4
+2021-06-06 21:15:04,602 - INFO: Change strategy from 324 to 234 for switch 5
+2021-06-06 21:15:04,603 - INFO: Change strategy from 324 to 234 for switch 6
+2021-06-06 21:15:04,604 - INFO: Change strategy from 324 to 234 for switch 7
+2021-06-06 21:15:04,604 - INFO: Change strategy from 324 to 234 for switch 8
+2021-06-06 21:15:10,580 - INFO: Change strategy from 234 to 342 for switch 1
+2021-06-06 21:15:10,580 - WARNING: Now deploy new strategy, but mac_table_2.txt not exist
+2021-06-06 21:15:10,584 - INFO: Change strategy from 234 to 342 for switch 3
+2021-06-06 21:15:10,585 - INFO: Change strategy from 234 to 342 for switch 4
+2021-06-06 21:15:10,585 - INFO: Change strategy from 234 to 342 for switch 5
+2021-06-06 21:15:10,586 - INFO: Change strategy from 234 to 342 for switch 6
+2021-06-06 21:15:10,586 - INFO: Change strategy from 234 to 342 for switch 7
+2021-06-06 21:15:10,587 - INFO: Change strategy from 234 to 342 for switch 8
+2021-06-06 21:15:59,388 - ERROR: Flow status is 'failed', route update failed
+2021-06-06 21:17:44,233 - INFO: flow table for switch:1 update successfully!
+2021-06-06 21:17:44,233 - INFO: switch 1 flow table:match 000000000000 order 234 port 0
+2021-06-06 21:17:44,233 - INFO: switch 1 flow table:match 11111111111 order 234 port 1
+2021-06-06 21:17:44,233 - WARNING: Now deploy new route!, but mac_table_2.txt not existing, now create file for switch
+2021-06-06 21:17:44,237 - INFO: flow table for switch:2 update successfully!
+2021-06-06 21:17:44,238 - INFO: switch 2 flow table:match 000000000000 order 234 port 0
+2021-06-06 21:17:44,238 - INFO: switch 2 flow table:match 11111111111 order 234 port 1
+2021-06-06 21:17:44,238 - INFO: flow table for switch:3 update successfully!
+2021-06-06 21:17:44,238 - INFO: switch 3 flow table:match 000000000000 order 234 port 1
+2021-06-06 21:17:44,238 - INFO: switch 3 flow table:match 11111111111 order 234 port 0
+2021-06-06 21:18:54,300 - INFO: flow table for switch:1 update successfully!
+2021-06-06 21:18:54,300 - INFO: switch 1 flow table:match 000000000000 order 234 port 0
+2021-06-06 21:18:54,300 - INFO: switch 1 flow table:match 111111111111 order 234 port 1
+2021-06-06 21:18:54,304 - INFO: flow table for switch:2 update successfully!
+2021-06-06 21:18:54,305 - INFO: switch 2 flow table:match 000000000000 order 234 port 0
+2021-06-06 21:18:54,305 - INFO: switch 2 flow table:match 111111111111 order 234 port 1
+2021-06-06 21:18:54,305 - INFO: flow table for switch:3 update successfully!
+2021-06-06 21:18:54,305 - INFO: switch 3 flow table:match 000000000000 order 234 port 1
+2021-06-06 21:18:54,305 - INFO: switch 3 flow table:match 111111111111 order 234 port 0
+2021-06-06 21:19:16,289 - WARNING: Strategy not change!
+2021-06-06 21:19:21,300 - WARNING: Strategy not change!
+2021-06-06 21:19:24,684 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-06 21:19:24,688 - INFO: Change strategy from 234 to 324 for switch 2
+2021-06-06 21:19:24,689 - INFO: Change strategy from 234 to 324 for switch 3
+2021-06-06 21:19:24,690 - INFO: Change strategy from 234 to 324 for switch 4
+2021-06-06 21:19:24,690 - INFO: Change strategy from 234 to 324 for switch 5
+2021-06-06 21:19:24,691 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-06 21:19:24,692 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-06 21:19:24,692 - INFO: Change strategy from 234 to 324 for switch 8

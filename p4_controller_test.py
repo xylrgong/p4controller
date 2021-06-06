@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-import logging
-
-from flask import Flask, jsonify, render_template, request
+from flask import Flask,  request
 from binascii import hexlify
 from scp import SCPClient
 import socket
@@ -10,6 +8,7 @@ import flow_trans
 import paramiko
 from logger import *
 from setup import *
+from file_handler import file_handler_route, file_handler_reverse
 
 
 def scpClient(ip, filename, local_path, remote_path, username, password): 
@@ -30,36 +29,24 @@ def scpClient(ip, filename, local_path, remote_path, username, password):
     return 'OK'
 
 
-def dpdk_reverse_commands_handler(switch, ip, pkt_reverse_t, pkt_reverse_t_n): # choose reverse file for dpdk switch
-    order_o = dict_reverse[pkt_reverse_t]
-    order_n = dict_reverse[pkt_reverse_t_n]
+def dpdk_reverse_commands_handler(switch, ip, order_o, order_n): # choose reverse file for dpdk switch
     print('/*********** DPDK switch **********/')
     print('switch:', switch)
     print('Strategy running is: ', order_o, ' Now switch to: ', order_n)
-    table_filename = 'mac_table.txt'
-    f = open(table_filename, 'r')
-    t = str(time.time())
-    file_data = ''
-    for line in f.readlines()[1:]:
-        words = line.split()
-        order_o = words[3]
-        order_o = ' ' + order_o + ' '
-        if order_n != order_o:
-            line = line.replace(order_o, order_n)
-        file_data += line
-    with open('mac_table.txt', 'w') as f:
-        f.write(t)
-        f.write('\n')
-        f.write(file_data)
-    status = scpClient(ip=ip, filename=table_filename, local_path=local_work_dir, remote_path=dpdk_work_dir[switch], username=dpdk_username[switch], password='123456')
-    return status
-
-
-def dec_to_hex(ip):   # transfer ip from dec to hex, eg, from 192.168.0.11 to 0xc0a80b
-    packed_ip_addr = socket.inet_aton(ip)
-    hexStr = hexlify(packed_ip_addr)
-    return hexStr.decode()
-
+    table_filename = 'mac_table_' + switch + '.txt'
+    table_dir = 'mac_table_local/'
+    status = file_handler_reverse(log=log, table_dir=table_dir, table_name=table_filename, order_n=order_n)
+    '''
+    status can be:
+    1. 'Not existing': which is a warning level log, suggesting no route has passed this switch, we will create a file
+    2. 'OK': reverse mac_table is correctly written.
+    '''
+    if status == 'OK':
+        res = status
+        # res = scpClient(ip=ip, filename=table_filename, local_path=local_work_dir, remote_path=dpdk_work_dir[switch], username=dpdk_username[switch], password='123456')
+        return res
+    elif status == 'Not existing':
+        return status
 
 def mac_form_handler(macAddr):  # transfer mac form from '00:00:00:00:00:10' to '000000000010'
     return macAddr.replace(':', '')
@@ -72,18 +59,20 @@ app = Flask(__name__)
 def packet_reverse():  #
     global pkt_reverse_t
     pkt_reverse_t_n = request.form.get("type", type=str)  # get reverse type from controller
+    order_o = dict_reverse[pkt_reverse_t]
+    order_n = dict_reverse[pkt_reverse_t_n]
     if pkt_reverse_t_n == pkt_reverse_t:
         log.logger.warning('Strategy not change!')
         return 'Bad Request'
     # for dpdk switches:
+
     for switch in dpdk_switch:
-        res = dpdk_reverse_commands_handler(switch=switch, ip=switch_ip_table[switch], pkt_reverse_t=pkt_reverse_t, pkt_reverse_t_n=pkt_reverse_t_n)
+        res = dpdk_reverse_commands_handler(switch=switch, ip=switch_ip_table[switch], order_o=order_o, order_n=order_n)
         if res == 'OK':
-            info = "Change strategy from " + pkt_reverse_t + " to " + pkt_reverse_t_n + " for switch " + switch
+            info = "Change strategy from " + order_o + " to " + order_n + " for switch " + switch
             log.logger.info(info)
-        else:
-            print("Change strategy failed! " + res)
-            return 'Strategy change failed'
+        elif res == 'Not existing':
+            print("strategy not change for switch:" + switch + " for file not existing")
     pkt_reverse_t = pkt_reverse_t_n
     return 'OK'
 
@@ -106,18 +95,22 @@ def packet_route():
     flow_data = {"src": src_mac, "dst": dst_mac, "bandwidth": bw, "delay": delay}
     # print("Get flow data:", flow_data)
     # switch to calculate by flow_trans!!!
-    flow = flow_trans.schedule_flows(flow_data)
-    print("Get flow:", flow)
+    # flow = flow_trans.schedule_flows(flow_data)
+    # print("Get flow:", flow)
     # flow = {'status': 'success', 'items': [{'src_mac': 'a0:36:9f:a9:5b:6f', 'dst_mac': '08:00:27:87:aa:b8', 'path': ['1',  '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
     # flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:1a:0a:93', 'dst_mac': '00:f1:f3:1a:cc:c1', 'path': ['1', '4', '5', '6', '7', '8', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
-    #flow = {'status': 'success', 'items': [{'src_mac': 'f0:2f:74:ad:b1:d1', 'dst_mac': 'f0:2f:74:ad:b1:30', 'path': ['1', '4', '5', '6', '7', '8', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
-
+    flow = {'status': 'success', 'items': [{'src_mac': '00:00:00:00:00:00', 'dst_mac': '11:11:11:11:11:11', 'path': ['1', '2', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
+    status = flow['status']
+    if status == 'failed':
+        log.logger.error('Flow status is \'failed\', route update failed')
+        return 'Bad flow'
     '''
     flow can be like:
     flow = {'status': 'success', 'items': [{'src_mac': '00:00:00:00:00:10', 'dst_mac': '00:00:00:00:00:20', 'path': ['1', '3', '4'], 'ports': ['-1', '5', '6', '7', '8', '-1']}], 'order': [0, 1, 3, 2]}
     '''
     route_and_path = flow['items'][-1]  # a dict contains 'src_mac', 'dst_mac' and 'path'
     # order = flow['order']
+
     print("Route and path is:", route_and_path)
     dst_mac_write_dpdk = mac_form_handler(route_and_path['dst_mac']) # get dst MAC as '0xaabbccddeeff'
     src_mac_write_dpdk = mac_form_handler(route_and_path['src_mac'])
@@ -144,25 +137,27 @@ def packet_route():
             n = int(path[i + 1]) - 1  # n means switch 4
             port_m2n = route_port_table[m][n]  # for s3->s4 lookup in route_port_table[2][3]
             port_n2m = route_port_table[m][l]  # for s3->s1 lookup in route_port_table[2][0]
+        tmp_mac_port = {dst_mac_write_dpdk: port_m2n, src_mac_write_dpdk: port_n2m}
         switch = path[i]  # switch = '1' or '3' or '4'
         switch_ip = switch_ip_table[switch]
         if switch in dpdk_switch:  # deploy flow table to DPDK switch
             print('/*********** DPDK switch **********/')
             print('switch:', switch)
-            table_name = 'mac_table.txt'
-            t = str(time.time())
-            f = open(table_name, 'w')
-            f.write(t+'\n')
-            flow_item_dst = 'match ' + dst_mac_write_dpdk + ' order ' + order + ' port ' + port_m2n + '\n'
-            flow_item_src = 'match ' + src_mac_write_dpdk + ' order ' + order + ' port ' + port_n2m + '\n'
-            f.write(flow_item_dst)
-            f.write(flow_item_src)
-            f.close()
-            res = scpClient(ip=switch_ip, filename=table_name, local_path=local_work_dir, remote_path=dpdk_work_dir[switch], username=dpdk_username[switch], password='123456')
+            table_name = 'mac_table_' + switch + '.txt'
+            table_dir = 'mac_table_local/'
+            file_handler_route(log=log, table_dir=table_dir, table_name=table_name,
+                               src_mac=src_mac_write_dpdk, src_mac_p=port_m2n,
+                               dst_mac=dst_mac_write_dpdk, dst_mac_p=port_n2m,
+                               order=order)
+
+            #res = scpClient(ip=switch_ip, filename=table_name, local_path=local_work_dir,
+            #                remote_path=dpdk_work_dir[switch],
+            #                username=dpdk_username[switch], password='123456')
+            res = 'OK'
             if res == 'OK':
                 log.logger.info("flow table for switch:" + switch + " update successfully!")
-                log.logger.info("switch " + switch + "flow table:" + flow_item_src)
-                log.logger.info("switch " + switch + "flow table:" + flow_item_dst)
+                log.logger.info("switch " + switch + " flow table:" + 'match ' + src_mac_write_dpdk + ' order ' + order + ' port ' + port_n2m)
+                log.logger.info("switch " + switch + " flow table:" + 'match ' + dst_mac_write_dpdk + ' order ' + order + ' port ' + port_m2n)
             elif res == 'Error':
                 log.logger.error("Unable to update flow table for switch:", switch)
     return 'OK'
