@@ -226,3 +226,114 @@
 2021-06-06 21:19:24,691 - INFO: Change strategy from 234 to 324 for switch 6
 2021-06-06 21:19:24,692 - INFO: Change strategy from 234 to 324 for switch 7
 2021-06-06 21:19:24,692 - INFO: Change strategy from 234 to 324 for switch 8
+2021-06-07 18:00:47,120 - WARNING: Now deploy new route!, but mac_table_1.txt not existing, now create file for switch
+2021-06-07 18:00:47,455 - ERROR: Cannot find file mac_table_1.txt at/home/gs/p4controller/mac_table_1.txt
+2021-06-07 18:00:47,466 - WARNING: Now deploy new route!, but mac_table_7.txt not existing, now create file for switch
+2021-06-07 18:00:47,859 - ERROR: Cannot find file mac_table_7.txt at/home/gs/p4controller/mac_table_7.txt
+2021-06-07 18:00:47,861 - WARNING: Now deploy new route!, but mac_table_6.txt not existing, now create file for switch
+2021-06-07 18:00:48,191 - ERROR: Cannot find file mac_table_6.txt at/home/gs/p4controller/mac_table_6.txt
+2021-06-07 18:02:47,707 - ERROR: Cannot find file mac_table_1.txt at/home/gs/p4controller/mac_table_1.txt
+2021-06-07 18:02:48,075 - ERROR: Cannot find file mac_table_7.txt at/home/gs/p4controller/mac_table_7.txt
+2021-06-07 18:02:48,439 - ERROR: Cannot find file mac_table_6.txt at/home/gs/p4controller/mac_table_6.txt
+2021-06-07 18:03:54,435 - ERROR: Cannot find file mac_table_1.txt at/home/gs/p4controller/mac_table_localmac_table_1.txt
+2021-06-07 18:03:54,843 - ERROR: Cannot find file mac_table_7.txt at/home/gs/p4controller/mac_table_localmac_table_7.txt
+2021-06-07 18:03:55,175 - ERROR: Cannot find file mac_table_6.txt at/home/gs/p4controller/mac_table_localmac_table_6.txt
+2021-06-07 18:04:21,891 - INFO: flow table for switch:1 update successfully!
+2021-06-07 18:04:21,891 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 18:04:21,891 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 18:07:00,282 - INFO: flow table for switch:1 update successfully!
+2021-06-07 18:07:00,282 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 18:07:00,282 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 18:08:07,359 - INFO: flow table for switch:1 update successfully!
+2021-06-07 18:08:07,359 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 18:08:07,359 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 18:08:07,731 - INFO: flow table for switch:7 update successfully!
+2021-06-07 18:08:07,731 - INFO: switch 7 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 18:08:07,732 - INFO: switch 7 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 18:08:08,091 - INFO: flow table for switch:6 update successfully!
+2021-06-07 18:08:08,092 - INFO: switch 6 flow table:match 00f1f3193781 order 234 port 1
+2021-06-07 18:08:08,092 - INFO: switch 6 flow table:match 00f1f3193739 order 234 port 0
+2021-06-07 18:12:39,770 - INFO: flow table for switch:1 update successfully!
+2021-06-07 18:12:39,771 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 18:12:39,771 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 18:12:40,143 - INFO: flow table for switch:7 update successfully!
+2021-06-07 18:12:40,143 - INFO: switch 7 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 18:12:40,144 - INFO: switch 7 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 18:12:40,479 - INFO: flow table for switch:6 update successfully!
+2021-06-07 18:12:40,479 - INFO: switch 6 flow table:match 00f1f3193781 order 234 port 1
+2021-06-07 18:12:40,479 - INFO: switch 6 flow table:match 00f1f3193739 order 234 port 0
+2021-06-07 18:23:16,709 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 18:23:16,709 - INFO: flow table for switch:1 update successfully!
+2021-06-07 18:23:16,710 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 18:23:16,710 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 18:23:17,065 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 18:23:17,065 - INFO: flow table for switch:7 update successfully!
+2021-06-07 18:23:17,065 - INFO: switch 7 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 18:23:17,066 - INFO: switch 7 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 18:23:17,397 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 18:23:17,398 - INFO: flow table for switch:6 update successfully!
+2021-06-07 18:23:17,398 - INFO: switch 6 flow table:match 00f1f3193781 order 234 port 1
+2021-06-07 18:23:17,398 - INFO: switch 6 flow table:match 00f1f3193739 order 234 port 0
+2021-06-07 19:50:36,406 - ERROR: Cannot find file mac_table_1.txt at/home/gs/p4controller/mac_table_1.txt
+2021-06-07 19:50:36,791 - ERROR: Cannot find file mac_table_6.txt at/home/gs/p4controller/mac_table_6.txt
+2021-06-07 19:50:37,163 - ERROR: Cannot find file mac_table_7.txt at/home/gs/p4controller/mac_table_7.txt
+2021-06-07 19:57:39,789 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 19:57:39,789 - INFO: flow table for switch:1 update successfully!
+2021-06-07 19:57:39,789 - INFO: switch 1 flow table:match 00f1f3193781 order 324 port 0
+2021-06-07 19:57:39,790 - INFO: switch 1 flow table:match 00f1f3193739 order 324 port 1
+2021-06-07 19:57:40,161 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 19:57:40,161 - INFO: flow table for switch:7 update successfully!
+2021-06-07 19:57:40,161 - INFO: switch 7 flow table:match 00f1f3193781 order 324 port 0
+2021-06-07 19:57:40,162 - INFO: switch 7 flow table:match 00f1f3193739 order 324 port 1
+2021-06-07 19:57:40,498 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 19:57:40,498 - INFO: flow table for switch:6 update successfully!
+2021-06-07 19:57:40,498 - INFO: switch 6 flow table:match 00f1f3193781 order 324 port 1
+2021-06-07 19:57:40,498 - INFO: switch 6 flow table:match 00f1f3193739 order 324 port 0
+2021-06-07 20:08:33,381 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 20:08:33,381 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-07 20:08:33,765 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 20:08:33,765 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-07 20:08:34,125 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 20:08:34,129 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-07 20:09:07,829 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 20:09:07,829 - INFO: Change strategy from 324 to 234 for switch 1
+2021-06-07 20:09:08,197 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 20:09:08,197 - INFO: Change strategy from 324 to 234 for switch 6
+2021-06-07 20:09:08,569 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 20:09:08,569 - INFO: Change strategy from 324 to 234 for switch 7
+2021-06-07 20:12:07,293 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 20:12:07,293 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-07 20:12:07,713 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 20:12:07,713 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-07 20:12:08,081 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 20:12:08,081 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-07 20:27:53,225 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 20:27:53,225 - INFO: Change strategy from 324 to 342 for switch 1
+2021-06-07 20:27:53,569 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 20:27:53,569 - INFO: Change strategy from 324 to 342 for switch 6
+2021-06-07 20:27:53,937 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 20:27:53,937 - INFO: Change strategy from 324 to 342 for switch 7
+2021-06-07 20:36:22,069 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 20:36:22,069 - INFO: flow table for switch:1 update successfully!
+2021-06-07 20:36:22,069 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
+2021-06-07 20:36:22,070 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
+2021-06-07 20:36:22,333 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 20:36:22,333 - INFO: flow table for switch:7 update successfully!
+2021-06-07 20:36:22,334 - INFO: switch 7 flow table:match 00f1f3193781 order 234 port 1
+2021-06-07 20:36:22,334 - INFO: switch 7 flow table:match 00f1f3193739 order 234 port 2
+2021-06-07 20:36:22,592 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 20:36:22,592 - INFO: flow table for switch:6 update successfully!
+2021-06-07 20:36:22,593 - INFO: switch 6 flow table:match 00f1f3193781 order 234 port 1
+2021-06-07 20:36:22,593 - INFO: switch 6 flow table:match 00f1f3193739 order 234 port 0
+2021-06-07 20:47:10,397 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 20:47:10,397 - INFO: Change strategy from 234 to 342 for switch 1
+2021-06-07 20:47:10,777 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 20:47:10,777 - INFO: Change strategy from 234 to 342 for switch 6
+2021-06-07 20:47:11,129 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 20:47:11,130 - INFO: Change strategy from 234 to 342 for switch 7
+2021-06-07 20:56:27,629 - INFO: File mac_table.txt successfully send to: 192.168.123.96
+2021-06-07 20:56:27,629 - INFO: Change strategy from 342 to 324 for switch 1
+2021-06-07 20:56:28,260 - INFO: File mac_table.txt successfully send to: 192.168.123.25
+2021-06-07 20:56:28,260 - INFO: Change strategy from 342 to 324 for switch 6
+2021-06-07 20:56:28,653 - INFO: File mac_table.txt successfully send to: 192.168.123.243
+2021-06-07 20:56:28,653 - INFO: Change strategy from 342 to 324 for switch 7

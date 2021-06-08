@@ -11,7 +11,7 @@ from setup import *
 from file_handler import file_handler_route, file_handler_reverse
 
 
-def scpClient(ip, filename, local_path, remote_path, username, password): 
+def scpClient(ip, filename, local_path, remote_path, username, password):
     port = 22
     ssh_client = paramiko.SSHClient()
     ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy)
@@ -24,7 +24,7 @@ def scpClient(ip, filename, local_path, remote_path, username, password):
         print(e)
         log.logger.error("Cannot find file " + filename + ' at' + local_file)
         return 'Error'
-    log.logger.info('File ', filename, ' successfully send to: ', ip)
+    log.logger.info('File ' + filename + ' successfully send to: ' + ip)
     ssh_client.close()
     return 'OK'
 
@@ -33,20 +33,25 @@ def dpdk_reverse_commands_handler(switch, ip, order_o, order_n): # choose revers
     print('/*********** DPDK switch **********/')
     print('switch:', switch)
     print('Strategy running is: ', order_o, ' Now switch to: ', order_n)
-    table_filename = 'mac_table_' + switch + '.txt'
+    table_filename_at_dir = 'mac_table_' + switch + '.txt'
+    table_filename = 'mac_table.txt'
     table_dir = 'mac_table_local/'
-    status = file_handler_reverse(log=log, table_dir=table_dir, table_name=table_filename, order_n=order_n)
+    status = file_handler_reverse(log=log, table_dir=table_dir,
+                                  table_name=table_filename_at_dir,
+                                  order_n=order_n)
     '''
     status can be:
     1. 'Not existing': which is a warning level log, suggesting no route has passed this switch, we will create a file
     2. 'OK': reverse mac_table is correctly written.
     '''
     if status == 'OK':
-        res = status
-        # res = scpClient(ip=ip, filename=table_filename, local_path=local_work_dir, remote_path=dpdk_work_dir[switch], username=dpdk_username[switch], password='123456')
+        res = scpClient(ip=ip, filename=table_filename,
+                        local_path=local_work_dir, remote_path=dpdk_work_dir[switch],
+                        username=dpdk_username[switch], password=dpdk_psw[switch])
         return res
     elif status == 'Not existing':
         return status
+
 
 def mac_form_handler(macAddr):  # transfer mac form from '00:00:00:00:00:10' to '000000000010'
     return macAddr.replace(':', '')
@@ -99,7 +104,7 @@ def packet_route():
     # print("Get flow:", flow)
     # flow = {'status': 'success', 'items': [{'src_mac': 'a0:36:9f:a9:5b:6f', 'dst_mac': '08:00:27:87:aa:b8', 'path': ['1',  '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
     # flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:1a:0a:93', 'dst_mac': '00:f1:f3:1a:cc:c1', 'path': ['1', '4', '5', '6', '7', '8', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
-    flow = {'status': 'success', 'items': [{'src_mac': '00:00:00:00:00:00', 'dst_mac': '11:11:11:11:11:11', 'path': ['1', '2', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
+    flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:19:37:81', 'dst_mac': '00:f1:f3:19:37:39', 'path': ['1', '7', '6'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
     status = flow['status']
     if status == 'failed':
         log.logger.error('Flow status is \'failed\', route update failed')
@@ -119,22 +124,22 @@ def packet_route():
 
     for i in range(path_len):
         if i == 0:  # we assume when i is 0, it must be the edge_switch_min(s1 in this case) connected to host at port 0.
-            m = int(path[i]) - 1        # eg, h1----s1----s2----s3----s4, and m means from s1 to s2(further switch)
-            n = int(path[i + 1]) - 1    # eg, in this case, n means from s1 to h1
+            m = int(path[i])       # eg, h1----s1----s2----s3----s4, and m means from s1 to s2(further switch)
+            n = int(path[i + 1])   # eg, in this case, n means from s1 to h1
             port_m2n = route_port_table[m][n]   # port_m2n means port from s1 to further switch
             port_n2m = '0'      # port_n2m means port from s1 to h1
         elif i == path_len - 1:  # we assume when i is path_len-1, it must be the edge_switch_max(s4 in this case) connected to host at port 0
-            m = int(path[i - 1]) - 1
-            n = int(path[i]) - 1
+            m = int(path[i - 1])
+            n = int(path[i])
             '''
             !!!!!!!!!!!!!!!!!!!!!!!!!s
             '''
             port_m2n = '0'      # we assume s4 to h4 through port 0
             port_n2m = route_port_table[n][m]
         else:
-            l = int(path[i - 1]) - 1    # l means the former node, in this case, when i = 1, s = '3', l means switch '1'
-            m = int(path[i]) - 1  # m means switch '3'
-            n = int(path[i + 1]) - 1  # n means switch 4
+            l = int(path[i - 1])   # l means the former node, in this case, when i = 1, s = '3', l means switch '1'
+            m = int(path[i])    # m means switch '3'
+            n = int(path[i + 1])  # n means switch 4
             port_m2n = route_port_table[m][n]  # for s3->s4 lookup in route_port_table[2][3]
             port_n2m = route_port_table[m][l]  # for s3->s1 lookup in route_port_table[2][0]
         tmp_mac_port = {dst_mac_write_dpdk: port_m2n, src_mac_write_dpdk: port_n2m}
@@ -143,17 +148,17 @@ def packet_route():
         if switch in dpdk_switch:  # deploy flow table to DPDK switch
             print('/*********** DPDK switch **********/')
             print('switch:', switch)
-            table_name = 'mac_table_' + switch + '.txt'
+            table_name_at_dir = 'mac_table_' + switch + '.txt'
+            table_name = 'mac_table.txt'
             table_dir = 'mac_table_local/'
-            file_handler_route(log=log, table_dir=table_dir, table_name=table_name,
-                               src_mac=src_mac_write_dpdk, src_mac_p=port_m2n,
-                               dst_mac=dst_mac_write_dpdk, dst_mac_p=port_n2m,
+            file_handler_route(log=log, table_dir=table_dir, table_name=table_name_at_dir,
+                               src_mac=src_mac_write_dpdk, src_mac_p=port_n2m,
+                               dst_mac=dst_mac_write_dpdk, dst_mac_p=port_m2n,
                                order=order)
 
-            #res = scpClient(ip=switch_ip, filename=table_name, local_path=local_work_dir,
-            #                remote_path=dpdk_work_dir[switch],
-            #                username=dpdk_username[switch], password='123456')
-            res = 'OK'
+            res = scpClient(ip=switch_ip, filename=table_name, local_path=local_work_dir,
+                            remote_path=dpdk_work_dir[switch],
+                            username=dpdk_username[switch], password=dpdk_psw[switch])
             if res == 'OK':
                 log.logger.info("flow table for switch:" + switch + " update successfully!")
                 log.logger.info("switch " + switch + " flow table:" + 'match ' + src_mac_write_dpdk + ' order ' + order + ' port ' + port_n2m)
