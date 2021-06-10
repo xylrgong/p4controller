@@ -60,6 +60,21 @@ def mac_form_handler(macAddr):  # transfer mac form from '00:00:00:00:00:10' to 
 app = Flask(__name__)
 
 
+@app.route('/det_switch', methods=['POST'])
+def det_switch():
+    global det_switch
+    req = request.form.get('switch', type=str)
+    if req == 'on' and not det_switch:
+        det_switch = True
+        log.logger.info('Change detNet switch to ON')
+    elif req == 'off' and det_switch:
+        det_switch = False
+        log.logger.info('Change detNet switch to OFF')
+    else:
+        log.logger.info('detNet switch not change')
+    return det_switch
+
+
 @app.route('/strategy', methods=['POST'])
 def packet_reverse():  #
     global pkt_reverse_t
@@ -85,12 +100,16 @@ def packet_reverse():  #
 @app.route('/route', methods=['POST'])
 def packet_route():
     global pkt_reverse_t
+    global det_switch
     order = dict_reverse[pkt_reverse_t]
     print("Reverse strategy now is:", order)
     edge_switch_min = '1'  # edge switch connected with host at port 0
     edge_switch_max = len(route_port_table)  # edge switch connected with host at port 0
 
     pkt_route = request.form # get route from controller. get src/dst mac and ip
+    if not det_switch:
+        log.logger.warning('detNet switch is off but get a route flow')
+        return 'detNet not open'
     print("get raw data")
     print(pkt_route)
     src_mac = pkt_route['src_mac']
@@ -170,4 +189,19 @@ def packet_route():
 
 if __name__ == '__main__':
     log = Logger('log/all.log', level='debug')
+    default_mac_table_loc = '/home/gs/p4controller/default_table_local/'
+    for switch in dpdk_switch:
+        file_name = 'mac_table_' + switch + '.txt'
+        status = scpClient(ip=switch_ip_table[switch], local_path=default_mac_table_loc,
+                           remote_path=dpdk_work_dir[switch] + 'mac_table.txt', filename=file_name,
+                           username=dpdk_username[switch],
+                           password=dpdk_psw[switch])
+        scpClient(ip='localhost', local_path=default_mac_table_loc,
+                  remote_path='/home/gs/p4controller/mac_table_local/', filename=file_name,
+                  username='gs',
+                  password='123456')
+        if status == 'OK':
+            log.logger.info('Initialize mac table to switch ' + switch + ' with return status:' + status)
+        elif status == 'Error':
+            log.logger.error('Initialize mac table to switch ' + switch + ' failed')
     app.run(host='0.0.0.0', port=2021, debug=True)

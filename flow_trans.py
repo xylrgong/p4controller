@@ -38,8 +38,7 @@ def schedule_flows(flow_data):
 
     if data['status'] == 'failed':
         print("alter:")
-        paths = get_all_egress_paths()
-        data = alter_path(flow_table, paths)
+        data = alter_path(flow_table)
         if data['status'] == 'failed':
             flow_table = flow_table[:-1]
             # last_paths = last_paths[:-1]
@@ -70,6 +69,7 @@ def override_table_with_new_flow(flow_data):
     flow_table.append(flow_data)
 
 
+# this function is for consistent update
 def record_paths(data):
     global last_paths
     new_paths = []
@@ -193,6 +193,11 @@ def allocate_bandwidth(all_volumes, all_links, all_paths, path_indexs, flow_num,
     result = linprog(-c, A_ub=A_ub, b_ub=b_ub, A_eq=A_eq, b_eq=b_eq, bounds=bounds)
 
     return result
+
+
+def clean_flow_table():
+    global flow_table
+    flow_table = []
 
 
 if __name__ == '__main__':

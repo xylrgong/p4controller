@@ -3,6 +3,7 @@ import time
 import re
 from logger import Logger
 
+
 def file_handler_route(log, table_dir, table_name, src_mac, src_mac_p, dst_mac, dst_mac_p, order):
     if not os.path.exists(table_dir + table_name):
         log.logger.warning('Now deploy new route!, but ' + table_name + ' not existing, now create file for switch')

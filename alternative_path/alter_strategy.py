@@ -1,29 +1,38 @@
 from setting import max_bandwidth
+from setting import mac_to_edge
 from setting import INF
 from topo import load_links_and_ports
+from topo import get_all_paths
 
 
-def alter_path(flow_table, paths):
-    path_indexes = []
+def alter_path(flow_table):
     bandwidths = []
+    chosen_paths = []
 
+    paths, _ = get_all_paths()
     for flow in flow_table:
         bandwidth = flow['bandwidth']
-        weights = get_paths_weight(paths, path_indexes, bandwidths)
+        ingress = mac_to_edge[flow['src']]
+        egress = mac_to_edge[flow['dst']]
+        flow_paths = paths[(ingress, egress)]
+        weights = get_paths_weight(flow_paths, chosen_paths, bandwidths)
         chosen_path = choose_path(weights, bandwidth)
-        path_indexes.append(chosen_path)
-        bandwidths.append(bandwidth)
+        if chosen_path == -1:
+            data = {'status': 'failed'}
+            return data
+        else:
+            chosen_paths.append(flow_paths[chosen_path])
+            bandwidths.append(bandwidth)
 
-    return retrieve_paths(flow_table, paths, path_indexes)
+    return retrieve_paths(flow_table, chosen_paths)
 
 
-def get_paths_weight(paths, path_indexes, bandwidths):
+def get_paths_weight(flow_paths, chosen_paths, bandwidths):
     links, _ = load_links_and_ports()
     links_weight = get_init_links_weight(links)
 
     count = 0
-    for index in path_indexes:
-        path = paths[index]
+    for path in chosen_paths:
         for node_index in range(len(path[:-1])):
             src = path[node_index]
             dst = path[node_index + 1]
@@ -31,7 +40,7 @@ def get_paths_weight(paths, path_indexes, bandwidths):
             links_weight[link_index] -= bandwidths[count]
         count += 1
 
-    return get_min_weight_in_path(paths, links, links_weight)
+    return get_min_weight_in_path(flow_paths, links, links_weight)
 
 
 def get_init_links_weight(links):
@@ -78,33 +87,18 @@ def cmp(elem):
     return elem[1]
 
 
-def retrieve_paths(flow_table, paths, path_indexes):
-    """
-    selected_path = []
-    for index in path_indexes:
-        if index != -1:
-            selected_path.append(paths[index])
-        else:
-            break
-    """
-
+def retrieve_paths(flow_table, chosen_paths):
     data = {}
-    if path_indexes[-1] == -1:
-        data['status'] = 'failed'
-    else:
-        data['status'] = 'success'
+    data['status'] = 'success'
+    data.setdefault("items", [])
 
-    if data['status'] == 'success':
-        data.setdefault("items", [])
-        flow_count = 0
-        for flow in flow_table:
-            item = {}
-            item['src_mac'] = flow["src"]
-            item['dst_mac'] = flow["dst"]
-            select_path = paths[path_indexes[flow_count]]
-            item['path'] = select_path
-            flow_count += 1
-            data['items'].append(item)
+    flow_count = 0
+    for flow in flow_table:
+        item = {'src_mac': flow["src"], 'dst_mac': flow["dst"]}
+        select_path = chosen_paths[flow_count]
+        item['path'] = select_path
+        flow_count += 1
+        data['items'].append(item)
 
     else:
         pass
@@ -115,33 +109,37 @@ def retrieve_paths(flow_table, paths, path_indexes):
 if __name__ == '__main__':
     # test data
     flow_table = [
-        {"src": "00:00:00:00:00:10",
-         "dst": "00:00:00:00:00:20",
-         "bandwidth": 400, "delay": 10},
-        {"src": "00:00:00:00:00:10",
-         "dst": "00:00:00:00:00:30",
-         "bandwidth": 350, "delay": 10},
-        {"src": "00:00:00:00:00:10",
-         "dst": "00:00:00:00:00:40",
-         "bandwidth": 300, "delay": 10},
-        {"src": "00:00:00:00:00:10",
-         "dst": "00:00:00:00:00:50",
-         "bandwidth": 50, "delay": 10},
+        {"src": "01:00:5e:00:00:01",
+         "dst": "01:00:5e:00:00:02",
+         "bandwidth": 800, "delay": 10},
+        {"src": "01:00:5e:00:00:01",
+         "dst": "01:00:5e:00:00:03",
+         "bandwidth": 80, "delay": 10},
 
-    ]
+   ]
+
     """
-            
-        {"src": "00:00:00:00:00:10",
-         "dst": "00:00:00:00:00:60",
+           {"src": "01:00:5e:00:00:03",
+         "dst": "01:00:5e:00:00:02",
          "bandwidth": 300, "delay": 10},
+        {"src": "01:00:5e:00:00:02",
+         "dst": "01:00:5e:00:00:03",
+         "bandwidth": 100, "delay": 10},
+        {"src": "01:00:5e:00:00:02",
+         "dst": "01:00:5e:00:00:01",
+         "bandwidth": 150, "delay": 10},
+        {"src": "01:00:5e:00:00:02",
+         "dst": "01:00:5e:00:00:03",
+         "bandwidth": 2000, "delay": 10},
+        {"src": "01:00:5e:00:00:04",
+         "dst": "01:00:5e:00:00:01",
+         "bandwidth": 50, "delay": 10},
+        {"src": "01:00:5e:00:00:04",
+         "dst": "01:00:5e:00:00:03",
+         "bandwidth": 2000, "delay": 10},
+
     """
-    paths = [
-        ['1', '3'],
-        ['1', '2', '3'],
-        ['1', '4', '5', '6', '7', '8', '3'],
-        ['1', '4', '7', '8', '3'],
-    ]
-    selected_path = alter_path(flow_table, paths)
+    selected_path = alter_path(flow_table)
     if selected_path:
         print(selected_path)
     else:
