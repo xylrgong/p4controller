@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from flask import Flask,  request
+from flask import Flask,  request, Response
 from binascii import hexlify
 from scp import SCPClient
 import socket
@@ -61,9 +61,9 @@ app = Flask(__name__)
 
 
 @app.route('/det_switch', methods=['POST'])
-def det_switch():
+def change_det_state():
     global det_switch
-    req = request.form.get('switch', type=str)
+    req = request.form.get("switch", type=str)
     if req == 'on' and not det_switch:
         det_switch = True
         log.logger.info('Change detNet switch to ON')
@@ -72,7 +72,7 @@ def det_switch():
         log.logger.info('Change detNet switch to OFF')
     else:
         log.logger.info('detNet switch not change')
-    return det_switch
+    return Response(status=200)
 
 
 @app.route('/strategy', methods=['POST'])
@@ -119,11 +119,11 @@ def packet_route():
     flow_data = {"src": src_mac, "dst": dst_mac, "bandwidth": bw, "delay": delay}
     # print("Get flow data:", flow_data)
     # switch to calculate by flow_trans!!!
-    # flow = flow_trans.schedule_flows(flow_data)
+    flow = flow_trans.schedule_flows(flow_data)
     # print("Get flow:", flow)
     # flow = {'status': 'success', 'items': [{'src_mac': 'a0:36:9f:a9:5b:6f', 'dst_mac': '08:00:27:87:aa:b8', 'path': ['1',  '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
     # flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:1a:0a:93', 'dst_mac': '00:f1:f3:1a:cc:c1', 'path': ['1', '4', '5', '6', '7', '8', '3'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
-    flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:19:37:81', 'dst_mac': '00:f1:f3:19:37:39', 'path': ['1', '7', '6'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
+    # flow = {'status': 'success', 'items': [{'src_mac': '00:f1:f3:19:37:81', 'dst_mac': '00:f1:f3:19:37:39', 'path': ['1', '7', '6'], 'ports': ['-1', '5', '6', '7', '8', '-1']}]}
     status = flow['status']
     if status == 'failed':
         log.logger.error('Flow status is \'failed\', route update failed')

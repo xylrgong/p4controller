@@ -16,7 +16,7 @@ def file_handler_route(log, table_dir, table_name, src_mac, src_mac_p, dst_mac, 
     file_data = ''
     for line in f.readlines()[1:]:
         words = line.split()
-        print(words)
+        # print(words)
         order_o = words[3]
         mac_o = words[1]
         port_o = words[5]
@@ -92,6 +92,6 @@ if __name__ == '__main__':
     test_dst_mac = '0xbbbbbbbbbbbb'
     test_src_mac_port = '1'
     test_dst_mac_port = '2'
-    file_handler_route(table_dir, table_name, src_mac=test_src_mac, src_mac_p= test_src_mac_port ,\
-    dst_mac= test_dst_mac, dst_mac_p=test_dst_mac_port, order=order)
-    #file_handler_reverse(table_dir, table_name, order)
+    file_handler_route(table_dir, table_name, src_mac=test_src_mac, src_mac_p=test_src_mac_port,
+                       dst_mac=test_dst_mac, dst_mac_p=test_dst_mac_port, order=order)
+    # file_handler_reverse(table_dir, table_name, order)

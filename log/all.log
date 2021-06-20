@@ -1,801 +1,270 @@
-2021-06-06 20:08:55,169 - ERROR: Route update failed
-2021-06-06 20:10:36,067 - ERROR: Flow status is 'failed', route update failed
-2021-06-06 20:11:44,151 - INFO: flow table for switch:1 update successfully!
-2021-06-06 20:11:44,152 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:11:44,152 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
-2021-06-06 20:11:44,153 - INFO: flow table for switch:3 update successfully!
-2021-06-06 20:11:44,153 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
-2021-06-06 20:11:44,153 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:13:31,336 - INFO: flow table for switch:1 update successfully!
-2021-06-06 20:13:31,336 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:13:31,337 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
-2021-06-06 20:13:31,341 - INFO: flow table for switch:3 update successfully!
-2021-06-06 20:13:31,341 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
-2021-06-06 20:13:31,341 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:14:17,783 - INFO: flow table for switch:1 update successfully!
-2021-06-06 20:14:17,784 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:14:17,784 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
-2021-06-06 20:14:17,788 - INFO: flow table for switch:3 update successfully!
-2021-06-06 20:14:17,788 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
-2021-06-06 20:14:17,788 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:15:22,943 - INFO: flow table for switch:1 update successfully!
-2021-06-06 20:15:22,943 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:15:22,943 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
-2021-06-06 20:15:22,948 - INFO: flow table for switch:3 update successfully!
-2021-06-06 20:15:22,948 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
-2021-06-06 20:15:22,948 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:15:42,815 - INFO: flow table for switch:1 update successfully!
-2021-06-06 20:15:42,815 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:15:42,816 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
-2021-06-06 20:15:42,820 - INFO: flow table for switch:3 update successfully!
-2021-06-06 20:15:42,820 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
-2021-06-06 20:15:42,820 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:15:44,455 - INFO: flow table for switch:1 update successfully!
-2021-06-06 20:15:44,456 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:15:44,456 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
-2021-06-06 20:15:44,460 - INFO: flow table for switch:3 update successfully!
-2021-06-06 20:15:44,460 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
-2021-06-06 20:15:44,460 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:18:00,529 - INFO: Change strategy from 0 to 1 for switch 1
-2021-06-06 20:18:00,534 - INFO: Change strategy from 0 to 1 for switch 2
-2021-06-06 20:18:00,534 - INFO: Change strategy from 0 to 1 for switch 3
-2021-06-06 20:18:58,230 - INFO: flow table for switch:1 update successfully!
-2021-06-06 20:18:58,231 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:18:58,231 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
-2021-06-06 20:18:58,231 - INFO: flow table for switch:4 update successfully!
-2021-06-06 20:18:58,232 - INFO: switch 4flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:18:58,232 - INFO: switch 4flow table:match f02f74adb130 order 234 port 1
-2021-06-06 20:18:58,232 - INFO: flow table for switch:5 update successfully!
-2021-06-06 20:18:58,233 - INFO: switch 5flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:18:58,233 - INFO: switch 5flow table:match f02f74adb130 order 234 port 1
-2021-06-06 20:18:58,233 - INFO: flow table for switch:6 update successfully!
-2021-06-06 20:18:58,234 - INFO: switch 6flow table:match f02f74adb1d1 order 234 port 1
-2021-06-06 20:18:58,234 - INFO: switch 6flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:18:58,234 - INFO: flow table for switch:7 update successfully!
-2021-06-06 20:18:58,235 - INFO: switch 7flow table:match f02f74adb1d1 order 234 port 1
-2021-06-06 20:18:58,235 - INFO: switch 7flow table:match f02f74adb130 order 234 port 2
-2021-06-06 20:18:58,235 - INFO: flow table for switch:8 update successfully!
-2021-06-06 20:18:58,236 - INFO: switch 8flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:18:58,236 - INFO: switch 8flow table:match f02f74adb130 order 234 port 1
-2021-06-06 20:18:58,236 - INFO: flow table for switch:3 update successfully!
-2021-06-06 20:18:58,236 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
-2021-06-06 20:18:58,236 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:19:48,633 - INFO: flow table for switch:1 update successfully!
-2021-06-06 20:19:48,633 - INFO: switch 1flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:19:48,633 - INFO: switch 1flow table:match f02f74adb130 order 234 port 3
-2021-06-06 20:19:48,637 - INFO: flow table for switch:4 update successfully!
-2021-06-06 20:19:48,638 - INFO: switch 4flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:19:48,638 - INFO: switch 4flow table:match f02f74adb130 order 234 port 1
-2021-06-06 20:19:48,638 - INFO: flow table for switch:5 update successfully!
-2021-06-06 20:19:48,638 - INFO: switch 5flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:19:48,638 - INFO: switch 5flow table:match f02f74adb130 order 234 port 1
-2021-06-06 20:19:48,639 - INFO: flow table for switch:6 update successfully!
-2021-06-06 20:19:48,639 - INFO: switch 6flow table:match f02f74adb1d1 order 234 port 1
-2021-06-06 20:19:48,639 - INFO: switch 6flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:19:48,640 - INFO: flow table for switch:7 update successfully!
-2021-06-06 20:19:48,640 - INFO: switch 7flow table:match f02f74adb1d1 order 234 port 1
-2021-06-06 20:19:48,640 - INFO: switch 7flow table:match f02f74adb130 order 234 port 2
-2021-06-06 20:19:48,640 - INFO: flow table for switch:8 update successfully!
-2021-06-06 20:19:48,641 - INFO: switch 8flow table:match f02f74adb1d1 order 234 port 0
-2021-06-06 20:19:48,641 - INFO: switch 8flow table:match f02f74adb130 order 234 port 1
-2021-06-06 20:19:48,641 - INFO: flow table for switch:3 update successfully!
-2021-06-06 20:19:48,641 - INFO: switch 3flow table:match f02f74adb1d1 order 234 port 3
-2021-06-06 20:19:48,641 - INFO: switch 3flow table:match f02f74adb130 order 234 port 0
-2021-06-06 20:22:35,129 - INFO: Change strategy from 0 to 1 for switch 1
-2021-06-06 20:24:30,849 - INFO: Change strategy from 0 to 1 for switch 1
-2021-06-06 20:27:38,905 - INFO: Change strategy from 0 to 1 for switch 1
-2021-06-06 20:27:38,905 - ERROR: mac_table not found!
-2021-06-06 20:27:38,905 - INFO: Change strategy from 0 to 1 for switch 2
-2021-06-06 20:27:38,910 - INFO: Change strategy from 0 to 1 for switch 3
-2021-06-06 20:27:38,910 - INFO: Change strategy from 0 to 1 for switch 4
-2021-06-06 20:27:38,911 - INFO: Change strategy from 0 to 1 for switch 5
-2021-06-06 20:27:38,911 - INFO: Change strategy from 0 to 1 for switch 6
-2021-06-06 20:27:38,912 - INFO: Change strategy from 0 to 1 for switch 7
-2021-06-06 20:27:38,912 - INFO: Change strategy from 0 to 1 for switch 8
-2021-06-06 20:29:51,216 - WARNING: Strategy not change!
-2021-06-06 20:30:01,560 - WARNING: Strategy not change!
-2021-06-06 20:44:33,926 - INFO: Change strategy from 0 to 1 for switch 1
-2021-06-06 20:44:33,926 - WARNING: Now deploy new strategy!, but mac_table_2.txt not existing, now create file for switch
-2021-06-06 20:47:24,862 - INFO: Change strategy from 0 to 1 for switch 1
-2021-06-06 20:47:24,863 - WARNING: file:mac_table_2.txtis empty
-2021-06-06 20:47:24,867 - INFO: Change strategy from 0 to 1 for switch 3
-2021-06-06 20:47:24,867 - INFO: Change strategy from 0 to 1 for switch 4
-2021-06-06 20:47:24,868 - INFO: Change strategy from 0 to 1 for switch 5
-2021-06-06 20:47:24,868 - INFO: Change strategy from 0 to 1 for switch 6
-2021-06-06 20:47:24,869 - INFO: Change strategy from 0 to 1 for switch 7
-2021-06-06 20:47:24,869 - INFO: Change strategy from 0 to 1 for switch 8
-2021-06-06 20:48:03,268 - WARNING: Strategy not change!
-2021-06-06 20:48:14,578 - WARNING: Strategy not change!
-2021-06-06 20:48:15,908 - WARNING: Strategy not change!
-2021-06-06 20:48:28,709 - INFO: Change strategy from 1 to 2 for switch 1
-2021-06-06 20:48:28,710 - WARNING: file:mac_table_2.txtis empty
-2021-06-06 20:48:28,714 - INFO: Change strategy from 1 to 2 for switch 3
-2021-06-06 20:48:28,715 - INFO: Change strategy from 1 to 2 for switch 4
-2021-06-06 20:48:28,716 - INFO: Change strategy from 1 to 2 for switch 5
-2021-06-06 20:48:28,716 - INFO: Change strategy from 1 to 2 for switch 6
-2021-06-06 20:48:28,717 - INFO: Change strategy from 1 to 2 for switch 7
-2021-06-06 20:48:28,718 - INFO: Change strategy from 1 to 2 for switch 8
-2021-06-06 20:49:17,029 - WARNING: Strategy not change!
-2021-06-06 20:49:19,548 - INFO: Change strategy from 0 to 1 for switch 1
-2021-06-06 20:49:19,549 - WARNING: file:mac_table_2.txt is empty
-2021-06-06 20:49:19,553 - INFO: Change strategy from 0 to 1 for switch 3
-2021-06-06 20:49:19,554 - INFO: Change strategy from 0 to 1 for switch 4
-2021-06-06 20:49:19,555 - INFO: Change strategy from 0 to 1 for switch 5
-2021-06-06 20:49:19,556 - INFO: Change strategy from 0 to 1 for switch 6
-2021-06-06 20:49:19,556 - INFO: Change strategy from 0 to 1 for switch 7
-2021-06-06 20:49:19,556 - INFO: Change strategy from 0 to 1 for switch 8
-2021-06-06 20:49:34,900 - INFO: Change strategy from 1 to 2 for switch 1
-2021-06-06 20:49:34,901 - WARNING: file:mac_table_2.txt is empty
-2021-06-06 20:49:34,905 - INFO: Change strategy from 1 to 2 for switch 3
-2021-06-06 20:49:34,906 - INFO: Change strategy from 1 to 2 for switch 4
-2021-06-06 20:49:34,907 - INFO: Change strategy from 1 to 2 for switch 5
-2021-06-06 20:49:34,907 - INFO: Change strategy from 1 to 2 for switch 6
-2021-06-06 20:49:34,908 - INFO: Change strategy from 1 to 2 for switch 7
-2021-06-06 20:49:34,908 - INFO: Change strategy from 1 to 2 for switch 8
-2021-06-06 20:52:07,670 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-06 20:52:07,670 - WARNING: file:mac_table_2.txt is empty
-2021-06-06 20:52:07,674 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-06 20:52:07,675 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-06 20:52:07,676 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-06 20:52:07,676 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-06 20:52:07,677 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-06 20:52:07,677 - INFO: Change strategy from 234 to 324 for switch 8
-2021-06-06 21:11:30,516 - WARNING: Strategy not change!
-2021-06-06 21:12:12,180 - WARNING: Strategy not change!
-2021-06-06 21:12:14,001 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-06 21:12:14,001 - WARNING: Now deploy new strategy!, but mac_table_2.txt not existing, now create file for switch
-2021-06-06 21:12:14,006 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-06 21:12:14,007 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-06 21:12:14,007 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-06 21:12:14,008 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-06 21:12:14,008 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-06 21:12:14,009 - INFO: Change strategy from 234 to 324 for switch 8
-2021-06-06 21:12:50,402 - WARNING: Strategy not change!
-2021-06-06 21:12:52,099 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-06 21:12:52,100 - WARNING: Now deploy new strategy!, but mac_table_2.txt not existing, now create file for switch
-2021-06-06 21:12:52,104 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-06 21:12:52,105 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-06 21:12:52,105 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-06 21:12:52,106 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-06 21:12:52,107 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-06 21:12:52,107 - INFO: Change strategy from 234 to 324 for switch 8
-2021-06-06 21:13:39,044 - WARNING: Strategy not change!
-2021-06-06 21:13:40,523 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-06 21:13:40,523 - WARNING: Now deploy new strategy!, but mac_table_2.txt not exist
-2021-06-06 21:14:17,183 - WARNING: Strategy not change!
-2021-06-06 21:14:18,698 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-06 21:14:18,699 - WARNING: Now deploy new strategy!, but mac_table_2.txt not exist
-2021-06-06 21:14:18,703 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-06 21:14:18,704 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-06 21:14:18,705 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-06 21:14:18,706 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-06 21:14:18,707 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-06 21:14:18,707 - INFO: Change strategy from 234 to 324 for switch 8
-2021-06-06 21:15:00,444 - WARNING: Strategy not change!
-2021-06-06 21:15:01,714 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-06 21:15:01,715 - WARNING: Now deploy new strategy, but mac_table_2.txt not exist
-2021-06-06 21:15:01,715 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-06 21:15:01,716 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-06 21:15:01,717 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-06 21:15:01,717 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-06 21:15:01,718 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-06 21:15:01,718 - INFO: Change strategy from 234 to 324 for switch 8
-2021-06-06 21:15:04,600 - INFO: Change strategy from 324 to 234 for switch 1
-2021-06-06 21:15:04,601 - WARNING: Now deploy new strategy, but mac_table_2.txt not exist
-2021-06-06 21:15:04,601 - INFO: Change strategy from 324 to 234 for switch 3
-2021-06-06 21:15:04,602 - INFO: Change strategy from 324 to 234 for switch 4
-2021-06-06 21:15:04,602 - INFO: Change strategy from 324 to 234 for switch 5
-2021-06-06 21:15:04,603 - INFO: Change strategy from 324 to 234 for switch 6
-2021-06-06 21:15:04,604 - INFO: Change strategy from 324 to 234 for switch 7
-2021-06-06 21:15:04,604 - INFO: Change strategy from 324 to 234 for switch 8
-2021-06-06 21:15:10,580 - INFO: Change strategy from 234 to 342 for switch 1
-2021-06-06 21:15:10,580 - WARNING: Now deploy new strategy, but mac_table_2.txt not exist
-2021-06-06 21:15:10,584 - INFO: Change strategy from 234 to 342 for switch 3
-2021-06-06 21:15:10,585 - INFO: Change strategy from 234 to 342 for switch 4
-2021-06-06 21:15:10,585 - INFO: Change strategy from 234 to 342 for switch 5
-2021-06-06 21:15:10,586 - INFO: Change strategy from 234 to 342 for switch 6
-2021-06-06 21:15:10,586 - INFO: Change strategy from 234 to 342 for switch 7
-2021-06-06 21:15:10,587 - INFO: Change strategy from 234 to 342 for switch 8
-2021-06-06 21:15:59,388 - ERROR: Flow status is 'failed', route update failed
-2021-06-06 21:17:44,233 - INFO: flow table for switch:1 update successfully!
-2021-06-06 21:17:44,233 - INFO: switch 1 flow table:match 000000000000 order 234 port 0
-2021-06-06 21:17:44,233 - INFO: switch 1 flow table:match 11111111111 order 234 port 1
-2021-06-06 21:17:44,233 - WARNING: Now deploy new route!, but mac_table_2.txt not existing, now create file for switch
-2021-06-06 21:17:44,237 - INFO: flow table for switch:2 update successfully!
-2021-06-06 21:17:44,238 - INFO: switch 2 flow table:match 000000000000 order 234 port 0
-2021-06-06 21:17:44,238 - INFO: switch 2 flow table:match 11111111111 order 234 port 1
-2021-06-06 21:17:44,238 - INFO: flow table for switch:3 update successfully!
-2021-06-06 21:17:44,238 - INFO: switch 3 flow table:match 000000000000 order 234 port 1
-2021-06-06 21:17:44,238 - INFO: switch 3 flow table:match 11111111111 order 234 port 0
-2021-06-06 21:18:54,300 - INFO: flow table for switch:1 update successfully!
-2021-06-06 21:18:54,300 - INFO: switch 1 flow table:match 000000000000 order 234 port 0
-2021-06-06 21:18:54,300 - INFO: switch 1 flow table:match 111111111111 order 234 port 1
-2021-06-06 21:18:54,304 - INFO: flow table for switch:2 update successfully!
-2021-06-06 21:18:54,305 - INFO: switch 2 flow table:match 000000000000 order 234 port 0
-2021-06-06 21:18:54,305 - INFO: switch 2 flow table:match 111111111111 order 234 port 1
-2021-06-06 21:18:54,305 - INFO: flow table for switch:3 update successfully!
-2021-06-06 21:18:54,305 - INFO: switch 3 flow table:match 000000000000 order 234 port 1
-2021-06-06 21:18:54,305 - INFO: switch 3 flow table:match 111111111111 order 234 port 0
-2021-06-06 21:19:16,289 - WARNING: Strategy not change!
-2021-06-06 21:19:21,300 - WARNING: Strategy not change!
-2021-06-06 21:19:24,684 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-06 21:19:24,688 - INFO: Change strategy from 234 to 324 for switch 2
-2021-06-06 21:19:24,689 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-06 21:19:24,690 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-06 21:19:24,690 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-06 21:19:24,691 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-06 21:19:24,692 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-06 21:19:24,692 - INFO: Change strategy from 234 to 324 for switch 8
-2021-06-07 18:00:47,120 - WARNING: Now deploy new route!, but mac_table_1.txt not existing, now create file for switch
-2021-06-07 18:00:47,455 - ERROR: Cannot find file mac_table_1.txt at/home/gs/p4controller/mac_table_1.txt
-2021-06-07 18:00:47,466 - WARNING: Now deploy new route!, but mac_table_7.txt not existing, now create file for switch
-2021-06-07 18:00:47,859 - ERROR: Cannot find file mac_table_7.txt at/home/gs/p4controller/mac_table_7.txt
-2021-06-07 18:00:47,861 - WARNING: Now deploy new route!, but mac_table_6.txt not existing, now create file for switch
-2021-06-07 18:00:48,191 - ERROR: Cannot find file mac_table_6.txt at/home/gs/p4controller/mac_table_6.txt
-2021-06-07 18:02:47,707 - ERROR: Cannot find file mac_table_1.txt at/home/gs/p4controller/mac_table_1.txt
-2021-06-07 18:02:48,075 - ERROR: Cannot find file mac_table_7.txt at/home/gs/p4controller/mac_table_7.txt
-2021-06-07 18:02:48,439 - ERROR: Cannot find file mac_table_6.txt at/home/gs/p4controller/mac_table_6.txt
-2021-06-07 18:03:54,435 - ERROR: Cannot find file mac_table_1.txt at/home/gs/p4controller/mac_table_localmac_table_1.txt
-2021-06-07 18:03:54,843 - ERROR: Cannot find file mac_table_7.txt at/home/gs/p4controller/mac_table_localmac_table_7.txt
-2021-06-07 18:03:55,175 - ERROR: Cannot find file mac_table_6.txt at/home/gs/p4controller/mac_table_localmac_table_6.txt
-2021-06-07 18:04:21,891 - INFO: flow table for switch:1 update successfully!
-2021-06-07 18:04:21,891 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 18:04:21,891 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 18:07:00,282 - INFO: flow table for switch:1 update successfully!
-2021-06-07 18:07:00,282 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 18:07:00,282 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 18:08:07,359 - INFO: flow table for switch:1 update successfully!
-2021-06-07 18:08:07,359 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 18:08:07,359 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 18:08:07,731 - INFO: flow table for switch:7 update successfully!
-2021-06-07 18:08:07,731 - INFO: switch 7 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 18:08:07,732 - INFO: switch 7 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 18:08:08,091 - INFO: flow table for switch:6 update successfully!
-2021-06-07 18:08:08,092 - INFO: switch 6 flow table:match 00f1f3193781 order 234 port 1
-2021-06-07 18:08:08,092 - INFO: switch 6 flow table:match 00f1f3193739 order 234 port 0
-2021-06-07 18:12:39,770 - INFO: flow table for switch:1 update successfully!
-2021-06-07 18:12:39,771 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 18:12:39,771 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 18:12:40,143 - INFO: flow table for switch:7 update successfully!
-2021-06-07 18:12:40,143 - INFO: switch 7 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 18:12:40,144 - INFO: switch 7 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 18:12:40,479 - INFO: flow table for switch:6 update successfully!
-2021-06-07 18:12:40,479 - INFO: switch 6 flow table:match 00f1f3193781 order 234 port 1
-2021-06-07 18:12:40,479 - INFO: switch 6 flow table:match 00f1f3193739 order 234 port 0
-2021-06-07 18:23:16,709 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 18:23:16,709 - INFO: flow table for switch:1 update successfully!
-2021-06-07 18:23:16,710 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 18:23:16,710 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 18:23:17,065 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 18:23:17,065 - INFO: flow table for switch:7 update successfully!
-2021-06-07 18:23:17,065 - INFO: switch 7 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 18:23:17,066 - INFO: switch 7 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 18:23:17,397 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 18:23:17,398 - INFO: flow table for switch:6 update successfully!
-2021-06-07 18:23:17,398 - INFO: switch 6 flow table:match 00f1f3193781 order 234 port 1
-2021-06-07 18:23:17,398 - INFO: switch 6 flow table:match 00f1f3193739 order 234 port 0
-2021-06-07 19:50:36,406 - ERROR: Cannot find file mac_table_1.txt at/home/gs/p4controller/mac_table_1.txt
-2021-06-07 19:50:36,791 - ERROR: Cannot find file mac_table_6.txt at/home/gs/p4controller/mac_table_6.txt
-2021-06-07 19:50:37,163 - ERROR: Cannot find file mac_table_7.txt at/home/gs/p4controller/mac_table_7.txt
-2021-06-07 19:57:39,789 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 19:57:39,789 - INFO: flow table for switch:1 update successfully!
-2021-06-07 19:57:39,789 - INFO: switch 1 flow table:match 00f1f3193781 order 324 port 0
-2021-06-07 19:57:39,790 - INFO: switch 1 flow table:match 00f1f3193739 order 324 port 1
-2021-06-07 19:57:40,161 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 19:57:40,161 - INFO: flow table for switch:7 update successfully!
-2021-06-07 19:57:40,161 - INFO: switch 7 flow table:match 00f1f3193781 order 324 port 0
-2021-06-07 19:57:40,162 - INFO: switch 7 flow table:match 00f1f3193739 order 324 port 1
-2021-06-07 19:57:40,498 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 19:57:40,498 - INFO: flow table for switch:6 update successfully!
-2021-06-07 19:57:40,498 - INFO: switch 6 flow table:match 00f1f3193781 order 324 port 1
-2021-06-07 19:57:40,498 - INFO: switch 6 flow table:match 00f1f3193739 order 324 port 0
-2021-06-07 20:08:33,381 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 20:08:33,381 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-07 20:08:33,765 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 20:08:33,765 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-07 20:08:34,125 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 20:08:34,129 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-07 20:09:07,829 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 20:09:07,829 - INFO: Change strategy from 324 to 234 for switch 1
-2021-06-07 20:09:08,197 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 20:09:08,197 - INFO: Change strategy from 324 to 234 for switch 6
-2021-06-07 20:09:08,569 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 20:09:08,569 - INFO: Change strategy from 324 to 234 for switch 7
-2021-06-07 20:12:07,293 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 20:12:07,293 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-07 20:12:07,713 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 20:12:07,713 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-07 20:12:08,081 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 20:12:08,081 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-07 20:27:53,225 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 20:27:53,225 - INFO: Change strategy from 324 to 342 for switch 1
-2021-06-07 20:27:53,569 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 20:27:53,569 - INFO: Change strategy from 324 to 342 for switch 6
-2021-06-07 20:27:53,937 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 20:27:53,937 - INFO: Change strategy from 324 to 342 for switch 7
-2021-06-07 20:36:22,069 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 20:36:22,069 - INFO: flow table for switch:1 update successfully!
-2021-06-07 20:36:22,069 - INFO: switch 1 flow table:match 00f1f3193781 order 234 port 0
-2021-06-07 20:36:22,070 - INFO: switch 1 flow table:match 00f1f3193739 order 234 port 1
-2021-06-07 20:36:22,333 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 20:36:22,333 - INFO: flow table for switch:7 update successfully!
-2021-06-07 20:36:22,334 - INFO: switch 7 flow table:match 00f1f3193781 order 234 port 1
-2021-06-07 20:36:22,334 - INFO: switch 7 flow table:match 00f1f3193739 order 234 port 2
-2021-06-07 20:36:22,592 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 20:36:22,592 - INFO: flow table for switch:6 update successfully!
-2021-06-07 20:36:22,593 - INFO: switch 6 flow table:match 00f1f3193781 order 234 port 1
-2021-06-07 20:36:22,593 - INFO: switch 6 flow table:match 00f1f3193739 order 234 port 0
-2021-06-07 20:47:10,397 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 20:47:10,397 - INFO: Change strategy from 234 to 342 for switch 1
-2021-06-07 20:47:10,777 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 20:47:10,777 - INFO: Change strategy from 234 to 342 for switch 6
-2021-06-07 20:47:11,129 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 20:47:11,130 - INFO: Change strategy from 234 to 342 for switch 7
-2021-06-07 20:56:27,629 - INFO: File mac_table.txt successfully send to: 192.168.123.96
-2021-06-07 20:56:27,629 - INFO: Change strategy from 342 to 324 for switch 1
-2021-06-07 20:56:28,260 - INFO: File mac_table.txt successfully send to: 192.168.123.25
-2021-06-07 20:56:28,260 - INFO: Change strategy from 342 to 324 for switch 6
-2021-06-07 20:56:28,653 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-07 20:56:28,653 - INFO: Change strategy from 342 to 324 for switch 7
-2021-06-08 12:44:51,786 - INFO: File mac_table.txt successfully send to: 192.168.123.201
-2021-06-08 12:44:51,786 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-08 12:44:52,125 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-08 12:44:52,126 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-08 12:44:52,478 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-08 12:44:52,478 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-08 22:54:51,407 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-08 22:54:51,407 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-08 22:54:51,569 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
-2021-06-08 22:54:51,569 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-08 22:54:51,829 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 22:54:51,830 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 22:54:52,089 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 22:54:52,089 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 22:54:53,022 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-08 22:54:53,023 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-08 22:54:53,180 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
-2021-06-08 22:54:53,180 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-08 22:54:53,427 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 22:54:53,427 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 22:54:53,673 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 22:54:53,673 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:00:29,421 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-08 23:00:29,422 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-08 23:00:29,576 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
-2021-06-08 23:00:29,576 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-08 23:00:29,909 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:00:29,910 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:00:30,254 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:00:30,254 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:00:31,134 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-08 23:00:31,134 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-08 23:00:31,283 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
-2021-06-08 23:00:31,283 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-08 23:00:31,613 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:00:31,613 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:00:31,978 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:00:31,978 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:02:38,261 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-08 23:02:38,261 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-08 23:02:40,677 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-08 23:02:40,678 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-08 23:02:40,827 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
-2021-06-08 23:02:40,828 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-08 23:02:41,138 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:02:41,138 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:02:41,525 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:02:41,526 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:02:42,449 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-08 23:02:42,450 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-08 23:02:42,603 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
-2021-06-08 23:02:42,603 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-08 23:02:42,946 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:02:42,946 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:02:43,310 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:02:43,310 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:05:54,243 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-08 23:05:54,244 - INFO: Change strategy from 234 to 324 for switch 2
-2021-06-08 23:05:54,431 - INFO: File mac_table.txt successfully send to: 192.168.123.203
-2021-06-08 23:05:54,432 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-08 23:05:54,761 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-08 23:05:54,762 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-08 23:05:55,146 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-08 23:05:55,146 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-08 23:08:19,018 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-08 23:08:19,019 - INFO: Change strategy from 324 to 234 for switch 2
-2021-06-08 23:08:19,211 - INFO: File mac_table.txt successfully send to: 192.168.123.203
-2021-06-08 23:08:19,211 - INFO: Change strategy from 324 to 234 for switch 3
-2021-06-08 23:08:19,518 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-08 23:08:19,518 - INFO: Change strategy from 324 to 234 for switch 6
-2021-06-08 23:08:19,874 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-08 23:08:19,874 - INFO: Change strategy from 324 to 234 for switch 7
-2021-06-08 23:12:00,278 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-08 23:12:00,278 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-08 23:12:00,628 - ERROR: Cannot find file mac_table_5.txt at/home/gs/p4controller/default_table_local/mac_table_5.txt
-2021-06-08 23:12:00,628 - ERROR: Initialize mac table to switch 5 failed
-2021-06-08 23:12:00,970 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:12:00,970 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:12:01,362 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:12:01,362 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:14:00,783 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-08 23:14:00,784 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-08 23:14:01,126 - INFO: File mac_table_5.txt successfully send to: 192.168.123.236
-2021-06-08 23:14:01,126 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-08 23:14:01,458 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:14:01,458 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:14:01,830 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:14:01,830 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:14:02,791 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-08 23:14:02,791 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-08 23:14:03,146 - INFO: File mac_table_5.txt successfully send to: 192.168.123.236
-2021-06-08 23:14:03,146 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-08 23:14:03,478 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:14:03,478 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:14:03,866 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:14:03,866 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:20:35,646 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-08 23:20:35,646 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-08 23:20:35,893 - INFO: File mac_table_5.txt successfully send to: 192.168.123.236
-2021-06-08 23:20:35,893 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-08 23:20:36,242 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:20:36,242 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:20:36,586 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:20:36,586 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:20:37,594 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-08 23:20:37,594 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-08 23:20:37,834 - INFO: File mac_table_5.txt successfully send to: 192.168.123.236
-2021-06-08 23:20:37,835 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-08 23:20:38,165 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-08 23:20:38,165 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-08 23:20:38,534 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-08 23:20:38,534 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-08 23:22:14,623 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-08 23:22:14,623 - INFO: Change strategy from 234 to 324 for switch 2
-2021-06-08 23:22:14,950 - INFO: File mac_table.txt successfully send to: 192.168.123.236
-2021-06-08 23:22:14,950 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-08 23:22:15,318 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-08 23:22:15,318 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-08 23:22:15,711 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-08 23:22:15,711 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-09 10:56:31,228 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 10:56:31,228 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 10:56:34,135 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 10:56:34,136 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 10:58:11,439 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 10:58:11,439 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 10:59:56,827 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 10:59:56,827 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 10:59:57,118 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 10:59:57,118 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 10:59:57,762 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 10:59:57,762 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 10:59:58,338 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-09 10:59:58,338 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 10:59:59,307 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 10:59:59,308 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 10:59:59,601 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 10:59:59,602 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 11:00:00,006 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 11:00:00,007 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 11:00:00,390 - INFO: File mac_table_7.txt successfully send to: 192.168.123.243
-2021-06-09 11:00:00,390 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 11:02:23,819 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-09 11:02:23,820 - INFO: Change strategy from 234 to 324 for switch 2
-2021-06-09 11:02:24,150 - INFO: File mac_table.txt successfully send to: 192.168.123.113
-2021-06-09 11:02:24,150 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-09 11:02:24,486 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-09 11:02:24,486 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-09 11:02:24,854 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-09 11:02:24,854 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-09 11:06:32,955 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-09 11:06:32,956 - INFO: Change strategy from 324 to 342 for switch 2
-2021-06-09 11:06:33,214 - INFO: File mac_table.txt successfully send to: 192.168.123.113
-2021-06-09 11:06:33,214 - INFO: Change strategy from 324 to 342 for switch 3
-2021-06-09 11:06:33,601 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-09 11:06:33,601 - INFO: Change strategy from 324 to 342 for switch 6
-2021-06-09 11:06:33,957 - INFO: File mac_table.txt successfully send to: 192.168.123.243
-2021-06-09 11:06:33,958 - INFO: Change strategy from 324 to 342 for switch 7
-2021-06-09 11:24:20,525 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 11:24:20,526 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 11:24:20,810 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 11:24:20,810 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 11:24:21,047 - ERROR: Cannot find file mac_table_4.txt at/home/gs/p4controller/default_table_local/mac_table_4.txt
-2021-06-09 11:24:21,048 - ERROR: Initialize mac table to switch 4 failed
-2021-06-09 11:24:21,294 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 11:24:21,295 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 11:30:46,341 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 11:30:46,751 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 11:30:46,752 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 11:30:47,037 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 11:30:47,280 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 11:30:47,280 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 11:30:47,560 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 11:30:47,816 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 11:30:47,817 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 11:30:48,061 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 11:30:48,303 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 11:30:48,304 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 11:30:49,229 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 11:30:49,476 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 11:30:49,476 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 11:30:49,741 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 11:30:49,975 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 11:30:49,976 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 11:30:50,229 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 11:30:50,476 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 11:30:50,476 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 11:30:50,718 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 11:30:50,964 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 11:30:50,964 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 11:33:00,155 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-09 11:33:00,156 - INFO: Change strategy from 234 to 324 for switch 2
-2021-06-09 11:33:00,430 - INFO: File mac_table.txt successfully send to: 192.168.123.113
-2021-06-09 11:33:00,430 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-09 11:33:00,796 - INFO: File mac_table.txt successfully send to: 192.168.123.204
-2021-06-09 11:33:00,797 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-09 11:33:01,150 - INFO: File mac_table.txt successfully send to: 192.168.123.205
-2021-06-09 11:33:01,150 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-09 11:33:22,747 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-09 11:33:22,748 - INFO: Change strategy from 324 to 342 for switch 2
-2021-06-09 11:33:23,018 - INFO: File mac_table.txt successfully send to: 192.168.123.113
-2021-06-09 11:33:23,018 - INFO: Change strategy from 324 to 342 for switch 3
-2021-06-09 11:33:23,404 - INFO: File mac_table.txt successfully send to: 192.168.123.204
-2021-06-09 11:33:23,405 - INFO: Change strategy from 324 to 342 for switch 4
-2021-06-09 11:33:23,770 - INFO: File mac_table.txt successfully send to: 192.168.123.205
-2021-06-09 11:33:23,770 - INFO: Change strategy from 324 to 342 for switch 5
-2021-06-09 19:42:02,718 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
-2021-06-09 19:42:02,963 - INFO: File mac_table_0.txt successfully send to: localhost
-2021-06-09 19:42:02,964 - INFO: Initialize mac table to switch 0 with return status:OK
-2021-06-09 19:42:03,224 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-09 19:42:03,463 - INFO: File mac_table_1.txt successfully send to: localhost
-2021-06-09 19:42:03,464 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-09 19:42:03,757 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 19:42:03,995 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 19:42:03,995 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 19:42:04,279 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 19:42:04,516 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 19:42:04,516 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 19:42:04,939 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 19:42:05,191 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 19:42:05,192 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 19:42:05,612 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 19:42:05,864 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 19:42:05,864 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 19:42:06,157 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 19:42:06,408 - INFO: File mac_table_6.txt successfully send to: localhost
-2021-06-09 19:42:06,408 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 19:42:06,648 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
-2021-06-09 19:42:06,892 - INFO: File mac_table_7.txt successfully send to: localhost
-2021-06-09 19:42:06,892 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 20:35:04,377 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
-2021-06-09 20:35:04,604 - INFO: File mac_table_0.txt successfully send to: localhost
-2021-06-09 20:35:04,604 - INFO: Initialize mac table to switch 0 with return status:OK
-2021-06-09 20:35:04,849 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-09 20:35:05,087 - INFO: File mac_table_1.txt successfully send to: localhost
-2021-06-09 20:35:05,087 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-09 20:35:05,377 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 20:35:05,616 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 20:35:05,616 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 20:35:05,889 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 20:35:06,131 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 20:35:06,132 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 20:35:06,417 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 20:35:06,654 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 20:35:06,655 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 20:35:06,899 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 20:35:07,143 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 20:35:07,144 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 20:35:07,402 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 20:35:07,652 - INFO: File mac_table_6.txt successfully send to: localhost
-2021-06-09 20:35:07,652 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 20:35:08,066 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
-2021-06-09 20:35:08,320 - INFO: File mac_table_7.txt successfully send to: localhost
-2021-06-09 20:35:08,320 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 20:42:57,688 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
-2021-06-09 20:42:57,939 - INFO: File mac_table_0.txt successfully send to: localhost
-2021-06-09 20:42:57,940 - INFO: Initialize mac table to switch 0 with return status:OK
-2021-06-09 20:42:58,194 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-09 20:42:58,435 - INFO: File mac_table_1.txt successfully send to: localhost
-2021-06-09 20:42:58,436 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-09 20:42:58,716 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 20:42:58,947 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 20:42:58,947 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 20:42:59,241 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 20:42:59,492 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 20:42:59,492 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 20:42:59,747 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 20:42:59,996 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 20:42:59,996 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 20:43:00,260 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 20:43:00,508 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 20:43:00,508 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 20:43:00,750 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 20:43:01,012 - INFO: File mac_table_6.txt successfully send to: localhost
-2021-06-09 20:43:01,013 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 20:43:01,254 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
-2021-06-09 20:43:01,524 - INFO: File mac_table_7.txt successfully send to: localhost
-2021-06-09 20:43:01,524 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 20:43:02,337 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
-2021-06-09 20:43:02,559 - INFO: File mac_table_0.txt successfully send to: localhost
-2021-06-09 20:43:02,559 - INFO: Initialize mac table to switch 0 with return status:OK
-2021-06-09 20:43:02,814 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-09 20:43:03,047 - INFO: File mac_table_1.txt successfully send to: localhost
-2021-06-09 20:43:03,048 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-09 20:43:03,321 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 20:43:03,576 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 20:43:03,577 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 20:43:03,854 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 20:43:04,100 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 20:43:04,100 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 20:43:04,366 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 20:43:04,636 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 20:43:04,636 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 20:43:04,878 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 20:43:05,120 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 20:43:05,120 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 20:43:05,370 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 20:43:05,616 - INFO: File mac_table_6.txt successfully send to: localhost
-2021-06-09 20:43:05,617 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 20:43:05,867 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
-2021-06-09 20:43:06,120 - INFO: File mac_table_7.txt successfully send to: localhost
-2021-06-09 20:43:06,120 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 20:46:09,124 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
-2021-06-09 20:46:09,345 - INFO: File mac_table_0.txt successfully send to: localhost
-2021-06-09 20:46:09,345 - INFO: Initialize mac table to switch 0 with return status:OK
-2021-06-09 20:46:09,594 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-09 20:46:09,823 - INFO: File mac_table_1.txt successfully send to: localhost
-2021-06-09 20:46:09,823 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-09 20:46:10,089 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 20:46:10,323 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 20:46:10,328 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 20:46:10,614 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 20:46:10,872 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 20:46:10,872 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 20:46:11,106 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 20:46:11,371 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 20:46:11,371 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 20:46:11,612 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 20:46:11,870 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 20:46:11,870 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 20:46:12,123 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 20:46:12,368 - INFO: File mac_table_6.txt successfully send to: localhost
-2021-06-09 20:46:12,368 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 20:46:12,610 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
-2021-06-09 20:46:12,856 - INFO: File mac_table_7.txt successfully send to: localhost
-2021-06-09 20:46:12,856 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 20:46:13,684 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
-2021-06-09 20:46:13,919 - INFO: File mac_table_0.txt successfully send to: localhost
-2021-06-09 20:46:13,919 - INFO: Initialize mac table to switch 0 with return status:OK
-2021-06-09 20:46:14,182 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-09 20:46:14,423 - INFO: File mac_table_1.txt successfully send to: localhost
-2021-06-09 20:46:14,424 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-09 20:46:14,725 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 20:46:14,967 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 20:46:14,967 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 20:46:15,257 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 20:46:15,500 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 20:46:15,500 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 20:46:15,742 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 20:46:15,988 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 20:46:15,988 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 20:46:16,226 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 20:46:16,476 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 20:46:16,477 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 20:46:16,726 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 20:46:16,967 - INFO: File mac_table_6.txt successfully send to: localhost
-2021-06-09 20:46:16,967 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 20:46:17,210 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
-2021-06-09 20:46:17,450 - INFO: File mac_table_7.txt successfully send to: localhost
-2021-06-09 20:46:17,451 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 20:55:23,479 - INFO: File mac_table.txt successfully send to: 192.168.123.200
-2021-06-09 20:55:23,479 - INFO: Change strategy from 234 to 324 for switch 0
-2021-06-09 20:55:23,873 - INFO: File mac_table.txt successfully send to: 192.168.123.201
-2021-06-09 20:55:23,873 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-09 20:55:24,207 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-09 20:55:24,207 - INFO: Change strategy from 234 to 324 for switch 2
-2021-06-09 20:55:24,514 - INFO: File mac_table.txt successfully send to: 192.168.123.113
-2021-06-09 20:55:24,514 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-09 20:55:24,861 - INFO: File mac_table.txt successfully send to: 192.168.123.204
-2021-06-09 20:55:24,862 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-09 20:55:25,233 - INFO: File mac_table.txt successfully send to: 192.168.123.205
-2021-06-09 20:55:25,233 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-09 20:55:25,549 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-09 20:55:25,550 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-09 20:55:25,905 - INFO: File mac_table.txt successfully send to: 192.168.123.207
-2021-06-09 20:55:25,906 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-09 21:09:18,772 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
-2021-06-09 21:09:18,995 - INFO: File mac_table_0.txt successfully send to: localhost
-2021-06-09 21:09:18,996 - INFO: Initialize mac table to switch 0 with return status:OK
-2021-06-09 21:09:19,369 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-09 21:09:19,603 - INFO: File mac_table_1.txt successfully send to: localhost
-2021-06-09 21:09:19,603 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-09 21:09:19,865 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 21:09:20,115 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 21:09:20,116 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 21:09:20,398 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 21:09:20,648 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 21:09:20,648 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 21:09:20,954 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 21:09:21,204 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 21:09:21,204 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 21:09:21,530 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 21:09:21,768 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 21:09:21,769 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 21:09:22,114 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 21:09:22,354 - INFO: File mac_table_6.txt successfully send to: localhost
-2021-06-09 21:09:22,354 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 21:09:22,689 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
-2021-06-09 21:09:22,944 - INFO: File mac_table_7.txt successfully send to: localhost
-2021-06-09 21:09:22,944 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 21:09:23,851 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
-2021-06-09 21:09:24,087 - INFO: File mac_table_0.txt successfully send to: localhost
-2021-06-09 21:09:24,087 - INFO: Initialize mac table to switch 0 with return status:OK
-2021-06-09 21:09:24,486 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
-2021-06-09 21:09:24,736 - INFO: File mac_table_1.txt successfully send to: localhost
-2021-06-09 21:09:24,736 - INFO: Initialize mac table to switch 1 with return status:OK
-2021-06-09 21:09:25,014 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
-2021-06-09 21:09:25,259 - INFO: File mac_table_2.txt successfully send to: localhost
-2021-06-09 21:09:25,260 - INFO: Initialize mac table to switch 2 with return status:OK
-2021-06-09 21:09:25,584 - INFO: File mac_table_3.txt successfully send to: 192.168.123.113
-2021-06-09 21:09:25,835 - INFO: File mac_table_3.txt successfully send to: localhost
-2021-06-09 21:09:25,836 - INFO: Initialize mac table to switch 3 with return status:OK
-2021-06-09 21:09:26,193 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
-2021-06-09 21:09:26,448 - INFO: File mac_table_4.txt successfully send to: localhost
-2021-06-09 21:09:26,448 - INFO: Initialize mac table to switch 4 with return status:OK
-2021-06-09 21:09:26,778 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
-2021-06-09 21:09:27,023 - INFO: File mac_table_5.txt successfully send to: localhost
-2021-06-09 21:09:27,023 - INFO: Initialize mac table to switch 5 with return status:OK
-2021-06-09 21:09:27,338 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
-2021-06-09 21:09:27,580 - INFO: File mac_table_6.txt successfully send to: localhost
-2021-06-09 21:09:27,580 - INFO: Initialize mac table to switch 6 with return status:OK
-2021-06-09 21:09:27,930 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
-2021-06-09 21:09:28,176 - INFO: File mac_table_7.txt successfully send to: localhost
-2021-06-09 21:09:28,176 - INFO: Initialize mac table to switch 7 with return status:OK
-2021-06-09 21:10:04,736 - INFO: File mac_table.txt successfully send to: 192.168.123.200
-2021-06-09 21:10:04,736 - INFO: Change strategy from 234 to 324 for switch 0
-2021-06-09 21:10:05,130 - INFO: File mac_table.txt successfully send to: 192.168.123.201
-2021-06-09 21:10:05,130 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-09 21:10:05,406 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-09 21:10:05,406 - INFO: Change strategy from 234 to 324 for switch 2
-2021-06-09 21:10:05,695 - INFO: File mac_table.txt successfully send to: 192.168.123.113
-2021-06-09 21:10:05,696 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-09 21:10:06,022 - INFO: File mac_table.txt successfully send to: 192.168.123.204
-2021-06-09 21:10:06,022 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-09 21:10:06,382 - INFO: File mac_table.txt successfully send to: 192.168.123.205
-2021-06-09 21:10:06,382 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-09 21:10:06,726 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-09 21:10:06,726 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-09 21:10:07,098 - INFO: File mac_table.txt successfully send to: 192.168.123.207
-2021-06-09 21:10:07,098 - INFO: Change strategy from 234 to 324 for switch 7
-2021-06-09 21:49:34,975 - INFO: File mac_table.txt successfully send to: 192.168.123.200
-2021-06-09 21:49:34,976 - INFO: Change strategy from 324 to 234 for switch 0
-2021-06-09 21:49:35,330 - INFO: File mac_table.txt successfully send to: 192.168.123.201
-2021-06-09 21:49:35,330 - INFO: Change strategy from 324 to 234 for switch 1
-2021-06-09 21:49:35,614 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-09 21:49:35,614 - INFO: Change strategy from 324 to 234 for switch 2
-2021-06-09 21:49:35,948 - INFO: File mac_table.txt successfully send to: 192.168.123.113
-2021-06-09 21:49:35,948 - INFO: Change strategy from 324 to 234 for switch 3
-2021-06-09 21:49:36,337 - INFO: File mac_table.txt successfully send to: 192.168.123.204
-2021-06-09 21:49:36,337 - INFO: Change strategy from 324 to 234 for switch 4
-2021-06-09 21:49:36,774 - INFO: File mac_table.txt successfully send to: 192.168.123.205
-2021-06-09 21:49:36,778 - INFO: Change strategy from 324 to 234 for switch 5
-2021-06-09 21:49:37,133 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-09 21:49:37,134 - INFO: Change strategy from 324 to 234 for switch 6
-2021-06-09 21:49:37,509 - INFO: File mac_table.txt successfully send to: 192.168.123.207
-2021-06-09 21:49:37,510 - INFO: Change strategy from 324 to 234 for switch 7
-2021-06-09 21:51:12,999 - INFO: File mac_table.txt successfully send to: 192.168.123.200
-2021-06-09 21:51:13,000 - INFO: Change strategy from 234 to 324 for switch 0
-2021-06-09 21:51:13,333 - INFO: File mac_table.txt successfully send to: 192.168.123.201
-2021-06-09 21:51:13,334 - INFO: Change strategy from 234 to 324 for switch 1
-2021-06-09 21:51:13,602 - INFO: File mac_table.txt successfully send to: 192.168.123.202
-2021-06-09 21:51:13,602 - INFO: Change strategy from 234 to 324 for switch 2
-2021-06-09 21:51:13,882 - INFO: File mac_table.txt successfully send to: 192.168.123.113
-2021-06-09 21:51:13,882 - INFO: Change strategy from 234 to 324 for switch 3
-2021-06-09 21:51:14,226 - INFO: File mac_table.txt successfully send to: 192.168.123.204
-2021-06-09 21:51:14,226 - INFO: Change strategy from 234 to 324 for switch 4
-2021-06-09 21:51:14,551 - INFO: File mac_table.txt successfully send to: 192.168.123.205
-2021-06-09 21:51:14,551 - INFO: Change strategy from 234 to 324 for switch 5
-2021-06-09 21:51:14,870 - INFO: File mac_table.txt successfully send to: 192.168.123.206
-2021-06-09 21:51:14,870 - INFO: Change strategy from 234 to 324 for switch 6
-2021-06-09 21:51:15,213 - INFO: File mac_table.txt successfully send to: 192.168.123.207
-2021-06-09 21:51:15,214 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-18 21:06:44,789 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
+2021-06-18 21:06:45,035 - INFO: File mac_table_0.txt successfully send to: localhost
+2021-06-18 21:06:45,036 - INFO: Initialize mac table to switch 0 with return status:OK
+2021-06-18 21:06:45,291 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
+2021-06-18 21:06:45,529 - INFO: File mac_table_1.txt successfully send to: localhost
+2021-06-18 21:06:45,529 - INFO: Initialize mac table to switch 1 with return status:OK
+2021-06-18 21:06:45,789 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
+2021-06-18 21:06:46,021 - INFO: File mac_table_2.txt successfully send to: localhost
+2021-06-18 21:06:46,022 - INFO: Initialize mac table to switch 2 with return status:OK
+2021-06-18 21:06:46,285 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
+2021-06-18 21:06:46,529 - INFO: File mac_table_3.txt successfully send to: localhost
+2021-06-18 21:06:46,530 - INFO: Initialize mac table to switch 3 with return status:OK
+2021-06-18 21:06:46,792 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
+2021-06-18 21:06:47,039 - INFO: File mac_table_4.txt successfully send to: localhost
+2021-06-18 21:06:47,040 - INFO: Initialize mac table to switch 4 with return status:OK
+2021-06-18 21:06:47,295 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
+2021-06-18 21:06:47,529 - INFO: File mac_table_5.txt successfully send to: localhost
+2021-06-18 21:06:47,530 - INFO: Initialize mac table to switch 5 with return status:OK
+2021-06-18 21:06:47,792 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
+2021-06-18 21:06:48,046 - INFO: File mac_table_6.txt successfully send to: localhost
+2021-06-18 21:06:48,046 - INFO: Initialize mac table to switch 6 with return status:OK
+2021-06-18 21:06:48,320 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
+2021-06-18 21:06:48,574 - INFO: File mac_table_7.txt successfully send to: localhost
+2021-06-18 21:06:48,574 - INFO: Initialize mac table to switch 7 with return status:OK
+2021-06-18 21:06:49,417 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
+2021-06-18 21:06:49,645 - INFO: File mac_table_0.txt successfully send to: localhost
+2021-06-18 21:06:49,646 - INFO: Initialize mac table to switch 0 with return status:OK
+2021-06-18 21:06:49,894 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
+2021-06-18 21:06:50,137 - INFO: File mac_table_1.txt successfully send to: localhost
+2021-06-18 21:06:50,137 - INFO: Initialize mac table to switch 1 with return status:OK
+2021-06-18 21:06:50,399 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
+2021-06-18 21:06:50,642 - INFO: File mac_table_2.txt successfully send to: localhost
+2021-06-18 21:06:50,642 - INFO: Initialize mac table to switch 2 with return status:OK
+2021-06-18 21:06:50,900 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
+2021-06-18 21:06:51,142 - INFO: File mac_table_3.txt successfully send to: localhost
+2021-06-18 21:06:51,142 - INFO: Initialize mac table to switch 3 with return status:OK
+2021-06-18 21:06:51,398 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
+2021-06-18 21:06:51,646 - INFO: File mac_table_4.txt successfully send to: localhost
+2021-06-18 21:06:51,646 - INFO: Initialize mac table to switch 4 with return status:OK
+2021-06-18 21:06:51,890 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
+2021-06-18 21:06:52,145 - INFO: File mac_table_5.txt successfully send to: localhost
+2021-06-18 21:06:52,145 - INFO: Initialize mac table to switch 5 with return status:OK
+2021-06-18 21:06:52,395 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
+2021-06-18 21:06:52,638 - INFO: File mac_table_6.txt successfully send to: localhost
+2021-06-18 21:06:52,638 - INFO: Initialize mac table to switch 6 with return status:OK
+2021-06-18 21:06:52,890 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
+2021-06-18 21:06:53,129 - INFO: File mac_table_7.txt successfully send to: localhost
+2021-06-18 21:06:53,130 - INFO: Initialize mac table to switch 7 with return status:OK
+2021-06-18 21:07:38,357 - WARNING: detNet switch is off but get a route flow
+2021-06-18 21:16:35,915 - WARNING: detNet switch is off but get a route flow
+2021-06-18 21:26:17,140 - INFO: File mac_table.txt successfully send to: 192.168.123.200
+2021-06-18 21:26:17,141 - INFO: Change strategy from 234 to 324 for switch 0
+2021-06-18 21:26:17,402 - INFO: File mac_table.txt successfully send to: 192.168.123.201
+2021-06-18 21:26:17,402 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-18 21:26:17,659 - INFO: File mac_table.txt successfully send to: 192.168.123.202
+2021-06-18 21:26:17,659 - INFO: Change strategy from 234 to 324 for switch 2
+2021-06-18 21:26:17,915 - INFO: File mac_table.txt successfully send to: 192.168.123.203
+2021-06-18 21:26:17,915 - INFO: Change strategy from 234 to 324 for switch 3
+2021-06-18 21:26:18,170 - INFO: File mac_table.txt successfully send to: 192.168.123.204
+2021-06-18 21:26:18,170 - INFO: Change strategy from 234 to 324 for switch 4
+2021-06-18 21:26:18,406 - INFO: File mac_table.txt successfully send to: 192.168.123.205
+2021-06-18 21:26:18,406 - INFO: Change strategy from 234 to 324 for switch 5
+2021-06-18 21:26:18,662 - INFO: File mac_table.txt successfully send to: 192.168.123.206
+2021-06-18 21:26:18,663 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-18 21:26:18,922 - INFO: File mac_table.txt successfully send to: 192.168.123.207
+2021-06-18 21:26:18,922 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-18 21:28:05,596 - INFO: File mac_table.txt successfully send to: 192.168.123.200
+2021-06-18 21:28:05,597 - INFO: Change strategy from 324 to 342 for switch 0
+2021-06-18 21:28:05,838 - INFO: File mac_table.txt successfully send to: 192.168.123.201
+2021-06-18 21:28:05,838 - INFO: Change strategy from 324 to 342 for switch 1
+2021-06-18 21:28:06,095 - INFO: File mac_table.txt successfully send to: 192.168.123.202
+2021-06-18 21:28:06,096 - INFO: Change strategy from 324 to 342 for switch 2
+2021-06-18 21:28:06,351 - INFO: File mac_table.txt successfully send to: 192.168.123.203
+2021-06-18 21:28:06,351 - INFO: Change strategy from 324 to 342 for switch 3
+2021-06-18 21:28:06,606 - INFO: File mac_table.txt successfully send to: 192.168.123.204
+2021-06-18 21:28:06,607 - INFO: Change strategy from 324 to 342 for switch 4
+2021-06-18 21:28:06,866 - INFO: File mac_table.txt successfully send to: 192.168.123.205
+2021-06-18 21:28:06,866 - INFO: Change strategy from 324 to 342 for switch 5
+2021-06-18 21:28:07,098 - INFO: File mac_table.txt successfully send to: 192.168.123.206
+2021-06-18 21:28:07,098 - INFO: Change strategy from 324 to 342 for switch 6
+2021-06-18 21:28:07,350 - INFO: File mac_table.txt successfully send to: 192.168.123.207
+2021-06-18 21:28:07,350 - INFO: Change strategy from 324 to 342 for switch 7
+2021-06-18 21:30:05,653 - INFO: File mac_table.txt successfully send to: 192.168.123.200
+2021-06-18 21:30:05,653 - INFO: Change strategy from 342 to 432 for switch 0
+2021-06-18 21:30:05,944 - INFO: File mac_table.txt successfully send to: 192.168.123.201
+2021-06-18 21:30:05,944 - INFO: Change strategy from 342 to 432 for switch 1
+2021-06-18 21:30:06,219 - INFO: File mac_table.txt successfully send to: 192.168.123.202
+2021-06-18 21:30:06,220 - INFO: Change strategy from 342 to 432 for switch 2
+2021-06-18 21:30:06,475 - INFO: File mac_table.txt successfully send to: 192.168.123.203
+2021-06-18 21:30:06,475 - INFO: Change strategy from 342 to 432 for switch 3
+2021-06-18 21:30:06,730 - INFO: File mac_table.txt successfully send to: 192.168.123.204
+2021-06-18 21:30:06,730 - INFO: Change strategy from 342 to 432 for switch 4
+2021-06-18 21:30:06,989 - INFO: File mac_table.txt successfully send to: 192.168.123.205
+2021-06-18 21:30:06,990 - INFO: Change strategy from 342 to 432 for switch 5
+2021-06-18 21:30:07,234 - INFO: File mac_table.txt successfully send to: 192.168.123.206
+2021-06-18 21:30:07,234 - INFO: Change strategy from 342 to 432 for switch 6
+2021-06-18 21:30:07,493 - INFO: File mac_table.txt successfully send to: 192.168.123.207
+2021-06-18 21:30:07,494 - INFO: Change strategy from 342 to 432 for switch 7
+2021-06-18 21:50:59,324 - INFO: File mac_table.txt successfully send to: 192.168.123.200
+2021-06-18 21:50:59,325 - INFO: Change strategy from 432 to 234 for switch 0
+2021-06-18 21:50:59,602 - INFO: File mac_table.txt successfully send to: 192.168.123.201
+2021-06-18 21:50:59,602 - INFO: Change strategy from 432 to 234 for switch 1
+2021-06-18 21:50:59,871 - INFO: File mac_table.txt successfully send to: 192.168.123.202
+2021-06-18 21:50:59,871 - INFO: Change strategy from 432 to 234 for switch 2
+2021-06-18 21:51:00,135 - INFO: File mac_table.txt successfully send to: 192.168.123.203
+2021-06-18 21:51:00,135 - INFO: Change strategy from 432 to 234 for switch 3
+2021-06-18 21:51:00,401 - INFO: File mac_table.txt successfully send to: 192.168.123.204
+2021-06-18 21:51:00,401 - INFO: Change strategy from 432 to 234 for switch 4
+2021-06-18 21:51:00,657 - INFO: File mac_table.txt successfully send to: 192.168.123.205
+2021-06-18 21:51:00,658 - INFO: Change strategy from 432 to 234 for switch 5
+2021-06-18 21:51:00,926 - INFO: File mac_table.txt successfully send to: 192.168.123.206
+2021-06-18 21:51:00,926 - INFO: Change strategy from 432 to 234 for switch 6
+2021-06-18 21:51:01,193 - INFO: File mac_table.txt successfully send to: 192.168.123.207
+2021-06-18 21:51:01,194 - INFO: Change strategy from 432 to 234 for switch 7
+2021-06-18 22:01:22,365 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:06:54,978 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:07:35,184 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:08:02,046 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:18:36,682 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:19:06,889 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:19:52,585 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:21:19,611 - INFO: Change detNet switch to ON
+2021-06-18 22:21:59,621 - INFO: File mac_table.txt successfully send to: 192.168.123.200
+2021-06-18 22:21:59,621 - INFO: flow table for switch:0 update successfully!
+2021-06-18 22:21:59,622 - INFO: switch 0 flow table:match 2c534a07b36e order 234 port 0
+2021-06-18 22:21:59,622 - INFO: switch 0 flow table:match 2c534a07b3ad order 234 port 1
+2021-06-18 22:21:59,874 - INFO: File mac_table.txt successfully send to: 192.168.123.201
+2021-06-18 22:21:59,874 - INFO: flow table for switch:1 update successfully!
+2021-06-18 22:21:59,875 - INFO: switch 1 flow table:match 2c534a07b36e order 234 port 1
+2021-06-18 22:21:59,875 - INFO: switch 1 flow table:match 2c534a07b3ad order 234 port 0
+2021-06-18 22:22:30,261 - INFO: File mac_table.txt successfully send to: 192.168.123.200
+2021-06-18 22:22:30,262 - INFO: flow table for switch:0 update successfully!
+2021-06-18 22:22:30,262 - INFO: switch 0 flow table:match 2c534a07b36e order 234 port 0
+2021-06-18 22:22:30,262 - INFO: switch 0 flow table:match 2c534a07b3ad order 234 port 1
+2021-06-18 22:22:30,514 - INFO: File mac_table.txt successfully send to: 192.168.123.201
+2021-06-18 22:22:30,515 - INFO: flow table for switch:1 update successfully!
+2021-06-18 22:22:30,515 - INFO: switch 1 flow table:match 2c534a07b36e order 234 port 1
+2021-06-18 22:22:30,515 - INFO: switch 1 flow table:match 2c534a07b3ad order 234 port 0
+2021-06-18 22:23:00,176 - INFO: File mac_table.txt successfully send to: 192.168.123.202
+2021-06-18 22:23:00,176 - INFO: flow table for switch:2 update successfully!
+2021-06-18 22:23:00,176 - INFO: switch 2 flow table:match 2c534a07b36c order 234 port 0
+2021-06-18 22:23:00,177 - INFO: switch 2 flow table:match 2c534a07b3af order 234 port 1
+2021-06-18 22:23:00,432 - INFO: File mac_table.txt successfully send to: 192.168.123.203
+2021-06-18 22:23:00,432 - INFO: flow table for switch:3 update successfully!
+2021-06-18 22:23:00,432 - INFO: switch 3 flow table:match 2c534a07b36c order 234 port 1
+2021-06-18 22:23:00,433 - INFO: switch 3 flow table:match 2c534a07b3af order 234 port 2
+2021-06-18 22:23:00,691 - INFO: File mac_table.txt successfully send to: 192.168.123.204
+2021-06-18 22:23:00,691 - INFO: flow table for switch:4 update successfully!
+2021-06-18 22:23:00,691 - INFO: switch 4 flow table:match 2c534a07b36c order 234 port 1
+2021-06-18 22:23:00,691 - INFO: switch 4 flow table:match 2c534a07b3af order 234 port 2
+2021-06-18 22:23:00,934 - INFO: File mac_table.txt successfully send to: 192.168.123.205
+2021-06-18 22:23:00,935 - INFO: flow table for switch:5 update successfully!
+2021-06-18 22:23:00,935 - INFO: switch 5 flow table:match 2c534a07b36c order 234 port 1
+2021-06-18 22:23:00,935 - INFO: switch 5 flow table:match 2c534a07b3af order 234 port 0
+2021-06-18 22:30:15,386 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
+2021-06-18 22:30:15,633 - INFO: File mac_table_0.txt successfully send to: localhost
+2021-06-18 22:30:15,634 - INFO: Initialize mac table to switch 0 with return status:OK
+2021-06-18 22:30:15,883 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
+2021-06-18 22:30:16,112 - INFO: File mac_table_1.txt successfully send to: localhost
+2021-06-18 22:30:16,113 - INFO: Initialize mac table to switch 1 with return status:OK
+2021-06-18 22:30:16,364 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
+2021-06-18 22:30:16,617 - INFO: File mac_table_2.txt successfully send to: localhost
+2021-06-18 22:30:16,617 - INFO: Initialize mac table to switch 2 with return status:OK
+2021-06-18 22:30:16,872 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
+2021-06-18 22:30:17,110 - INFO: File mac_table_3.txt successfully send to: localhost
+2021-06-18 22:30:17,110 - INFO: Initialize mac table to switch 3 with return status:OK
+2021-06-18 22:30:17,359 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
+2021-06-18 22:30:17,606 - INFO: File mac_table_4.txt successfully send to: localhost
+2021-06-18 22:30:17,610 - INFO: Initialize mac table to switch 4 with return status:OK
+2021-06-18 22:30:17,859 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
+2021-06-18 22:30:18,109 - INFO: File mac_table_5.txt successfully send to: localhost
+2021-06-18 22:30:18,109 - INFO: Initialize mac table to switch 5 with return status:OK
+2021-06-18 22:30:18,363 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
+2021-06-18 22:30:18,617 - INFO: File mac_table_6.txt successfully send to: localhost
+2021-06-18 22:30:18,618 - INFO: Initialize mac table to switch 6 with return status:OK
+2021-06-18 22:30:18,937 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
+2021-06-18 22:30:19,190 - INFO: File mac_table_7.txt successfully send to: localhost
+2021-06-18 22:30:19,191 - INFO: Initialize mac table to switch 7 with return status:OK
+2021-06-18 22:30:20,121 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
+2021-06-18 22:30:20,350 - INFO: File mac_table_0.txt successfully send to: localhost
+2021-06-18 22:30:20,350 - INFO: Initialize mac table to switch 0 with return status:OK
+2021-06-18 22:30:20,594 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
+2021-06-18 22:30:20,845 - INFO: File mac_table_1.txt successfully send to: localhost
+2021-06-18 22:30:20,845 - INFO: Initialize mac table to switch 1 with return status:OK
+2021-06-18 22:30:21,099 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
+2021-06-18 22:30:21,337 - INFO: File mac_table_2.txt successfully send to: localhost
+2021-06-18 22:30:21,338 - INFO: Initialize mac table to switch 2 with return status:OK
+2021-06-18 22:30:21,608 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
+2021-06-18 22:30:21,845 - INFO: File mac_table_3.txt successfully send to: localhost
+2021-06-18 22:30:21,846 - INFO: Initialize mac table to switch 3 with return status:OK
+2021-06-18 22:30:22,094 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
+2021-06-18 22:30:22,338 - INFO: File mac_table_4.txt successfully send to: localhost
+2021-06-18 22:30:22,338 - INFO: Initialize mac table to switch 4 with return status:OK
+2021-06-18 22:30:22,590 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
+2021-06-18 22:30:22,842 - INFO: File mac_table_5.txt successfully send to: localhost
+2021-06-18 22:30:22,842 - INFO: Initialize mac table to switch 5 with return status:OK
+2021-06-18 22:30:23,090 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
+2021-06-18 22:30:23,333 - INFO: File mac_table_6.txt successfully send to: localhost
+2021-06-18 22:30:23,334 - INFO: Initialize mac table to switch 6 with return status:OK
+2021-06-18 22:30:23,590 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
+2021-06-18 22:30:23,845 - INFO: File mac_table_7.txt successfully send to: localhost
+2021-06-18 22:30:23,846 - INFO: Initialize mac table to switch 7 with return status:OK
+2021-06-18 22:31:31,444 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:31:52,230 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:32:10,048 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:35:59,170 - WARNING: detNet switch is off but get a route flow
+2021-06-18 22:37:53,056 - INFO: File mac_table.txt successfully send to: 192.168.123.200
+2021-06-18 22:37:53,056 - INFO: Change strategy from 234 to 324 for switch 0
+2021-06-18 22:37:53,310 - INFO: File mac_table.txt successfully send to: 192.168.123.201
+2021-06-18 22:37:53,311 - INFO: Change strategy from 234 to 324 for switch 1
+2021-06-18 22:37:53,564 - INFO: File mac_table.txt successfully send to: 192.168.123.202
+2021-06-18 22:37:53,564 - INFO: Change strategy from 234 to 324 for switch 2
+2021-06-18 22:37:53,820 - INFO: File mac_table.txt successfully send to: 192.168.123.203
+2021-06-18 22:37:53,820 - INFO: Change strategy from 234 to 324 for switch 3
+2021-06-18 22:37:54,074 - INFO: File mac_table.txt successfully send to: 192.168.123.204
+2021-06-18 22:37:54,075 - INFO: Change strategy from 234 to 324 for switch 4
+2021-06-18 22:37:54,318 - INFO: File mac_table.txt successfully send to: 192.168.123.205
+2021-06-18 22:37:54,319 - INFO: Change strategy from 234 to 324 for switch 5
+2021-06-18 22:37:54,609 - INFO: File mac_table.txt successfully send to: 192.168.123.206
+2021-06-18 22:37:54,610 - INFO: Change strategy from 234 to 324 for switch 6
+2021-06-18 22:37:54,846 - INFO: File mac_table.txt successfully send to: 192.168.123.207
+2021-06-18 22:37:54,846 - INFO: Change strategy from 234 to 324 for switch 7
+2021-06-19 22:07:38,323 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
+2021-06-19 22:07:38,737 - INFO: File mac_table_0.txt successfully send to: localhost
+2021-06-19 22:07:38,737 - INFO: Initialize mac table to switch 0 with return status:OK
+2021-06-19 22:07:39,250 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
+2021-06-19 22:07:39,498 - INFO: File mac_table_1.txt successfully send to: localhost
+2021-06-19 22:07:39,498 - INFO: Initialize mac table to switch 1 with return status:OK
+2021-06-19 22:07:39,956 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
+2021-06-19 22:07:40,193 - INFO: File mac_table_2.txt successfully send to: localhost
+2021-06-19 22:07:40,194 - INFO: Initialize mac table to switch 2 with return status:OK
+2021-06-19 22:07:40,676 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
+2021-06-19 22:07:40,957 - INFO: File mac_table_3.txt successfully send to: localhost
+2021-06-19 22:07:40,958 - INFO: Initialize mac table to switch 3 with return status:OK
+2021-06-19 22:07:41,528 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
+2021-06-19 22:07:41,790 - INFO: File mac_table_4.txt successfully send to: localhost
+2021-06-19 22:07:41,790 - INFO: Initialize mac table to switch 4 with return status:OK
+2021-06-19 22:07:42,304 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
+2021-06-19 22:07:42,558 - INFO: File mac_table_5.txt successfully send to: localhost
+2021-06-19 22:07:42,560 - INFO: Initialize mac table to switch 5 with return status:OK
+2021-06-19 22:07:43,007 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
+2021-06-19 22:07:43,265 - INFO: File mac_table_6.txt successfully send to: localhost
+2021-06-19 22:07:43,266 - INFO: Initialize mac table to switch 6 with return status:OK
+2021-06-19 22:07:43,764 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
+2021-06-19 22:07:44,012 - INFO: File mac_table_7.txt successfully send to: localhost
+2021-06-19 22:07:44,013 - INFO: Initialize mac table to switch 7 with return status:OK
+2021-06-19 22:07:44,876 - INFO: File mac_table_0.txt successfully send to: 192.168.123.200
+2021-06-19 22:07:45,117 - INFO: File mac_table_0.txt successfully send to: localhost
+2021-06-19 22:07:45,117 - INFO: Initialize mac table to switch 0 with return status:OK
+2021-06-19 22:07:45,354 - INFO: File mac_table_1.txt successfully send to: 192.168.123.201
+2021-06-19 22:07:45,610 - INFO: File mac_table_1.txt successfully send to: localhost
+2021-06-19 22:07:45,610 - INFO: Initialize mac table to switch 1 with return status:OK
+2021-06-19 22:07:45,868 - INFO: File mac_table_2.txt successfully send to: 192.168.123.202
+2021-06-19 22:07:46,118 - INFO: File mac_table_2.txt successfully send to: localhost
+2021-06-19 22:07:46,118 - INFO: Initialize mac table to switch 2 with return status:OK
+2021-06-19 22:07:46,392 - INFO: File mac_table_3.txt successfully send to: 192.168.123.203
+2021-06-19 22:07:46,642 - INFO: File mac_table_3.txt successfully send to: localhost
+2021-06-19 22:07:46,642 - INFO: Initialize mac table to switch 3 with return status:OK
+2021-06-19 22:07:46,940 - INFO: File mac_table_4.txt successfully send to: 192.168.123.204
+2021-06-19 22:07:47,194 - INFO: File mac_table_4.txt successfully send to: localhost
+2021-06-19 22:07:47,194 - INFO: Initialize mac table to switch 4 with return status:OK
+2021-06-19 22:07:47,434 - INFO: File mac_table_5.txt successfully send to: 192.168.123.205
+2021-06-19 22:07:47,686 - INFO: File mac_table_5.txt successfully send to: localhost
+2021-06-19 22:07:47,686 - INFO: Initialize mac table to switch 5 with return status:OK
+2021-06-19 22:07:47,942 - INFO: File mac_table_6.txt successfully send to: 192.168.123.206
+2021-06-19 22:07:48,198 - INFO: File mac_table_6.txt successfully send to: localhost
+2021-06-19 22:07:48,198 - INFO: Initialize mac table to switch 6 with return status:OK
+2021-06-19 22:07:48,438 - INFO: File mac_table_7.txt successfully send to: 192.168.123.207
+2021-06-19 22:07:48,693 - INFO: File mac_table_7.txt successfully send to: localhost
+2021-06-19 22:07:48,694 - INFO: Initialize mac table to switch 7 with return status:OK
